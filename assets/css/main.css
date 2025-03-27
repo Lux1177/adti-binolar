@@ -1,0 +1,19 @@
+@import "tailwindcss";
+@import "@nuxt/ui";
+@tailwind utilities;
+
+html {
+    overflow-y: scroll;
+}
+
+@media (max-width: 768px) {
+    * {
+        -ms-overflow-style: none; /* Для IE и Edge */
+        scrollbar-width: none; /* Для Firefox */
+    }
+
+    *::-webkit-scrollbar {
+        display: none; /* Для Chrome, Safari и Opera */
+    }
+}
+
