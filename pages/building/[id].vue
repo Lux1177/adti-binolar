@@ -25,7 +25,16 @@ const building: BuildingInfo | undefined = getBuildingById(id);
 				class="bg-[#091a2a] rounded-2xl shadow-xl overflow-hidden border border-[#112240]"
 			>
 				<div class="relative h-96">
-
+					<UCarousel
+						v-slot="{ item }"
+						arrows
+						prev-icon="i-lucide-chevron-left"
+						next-icon="i-lucide-chevron-right"
+						:items="building.images"
+						class="w-full max-w-xs mx-auto"
+					>
+						<img alt="" :src="item" width="320" height="320" class="rounded-lg">
+					</UCarousel>
 					<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
 					<div class="absolute bottom-0 left-0 right-0 p-6">
 						<h1 class="text-4xl font-bold text-white mb-2 drop-shadow-lg">{{ building.name }}</h1>
