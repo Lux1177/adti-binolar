@@ -5,7 +5,7 @@ export const buildings:BuildingInfo[] = [
 		id: 1,
 		name: '1-бино',
 		description: 'Асосий бино',
-		images: ['/1-bino.jpg'],
+		images: ['/1-bino.jpg', '/1-bino.jpg', '/1-bino.jpg', '/1-bino.jpg', '/1-bino.jpg',],
 		location_map: ['yandex', 'google'],
 	},
 	{

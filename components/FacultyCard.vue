@@ -1,15 +1,20 @@
 <script setup lang="ts">
 import type { Building } from '~/types/building';
 import { useRouter } from 'vue-router';
+import { isFavorite } from '@/composables/useFavorites'
 
 interface BuildingProps {
 	building: Building
-	type: string
 }
 
 const props = defineProps<BuildingProps>();
 const router = useRouter();
 const cardElement = ref(null);
+const isFav: Ref<boolean> = ref(false);
+const changeIsFav = () => {
+	updateFavorites(props.building)
+	isFav.value = isFavorite(props.building.id);
+}
 
 const navigateToBuilding = () => {
 	if (cardElement.value) {
@@ -18,13 +23,20 @@ const navigateToBuilding = () => {
 		card.style.opacity = '0';
 	}
 	setTimeout(() => {
-		router.push(`/${props.type}/${props.building.id}`);
+		router.push(`/faculties/${props.building.id}`);
 	}, 50);
 };
+
+onMounted(() => {
+	isFav.value = isFavorite(props.building.id);
+})
 </script>
 
 <template>
-	<div class="building-card">
+	<div class="building-card relative">
+		<div @click="changeIsFav" class="absolute right-2 top-2 z-50 bg-black/10 rounded-lg px-1 py-0.5">
+			<Icon :name="isFav ? 'mdi:heart' : 'mdi:heart-outline'" class="w-9 h-9 text-red-500 hover:scale-105"/>
+		</div>
 		<div
 			@click="navigateToBuilding"
 			class="cursor-pointer bg-[#091a2a] rounded-xl shadow-lg overflow-hidden transform transition-all duration-300 hover:scale-105 hover:border-[#52e0c4] border border-[#1b2b3a]"
@@ -54,9 +66,6 @@ const navigateToBuilding = () => {
 
 
 <style scoped>
-.building-card {
-	perspective: 1000px;
-}
 
 @keyframes fadeIn {
 	from {

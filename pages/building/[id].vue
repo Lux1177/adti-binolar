@@ -24,19 +24,20 @@ const building: BuildingInfo | undefined = getBuildingById(id);
 				v-if="building"
 				class="bg-[#091a2a] rounded-2xl shadow-xl overflow-hidden border border-[#112240]"
 			>
-				<div class="relative h-96">
-					<UCarousel
-						v-slot="{ item }"
-						arrows
-						prev-icon="i-lucide-chevron-left"
-						next-icon="i-lucide-chevron-right"
-						:items="building.images"
-						class="w-full max-w-xs mx-auto"
-					>
-						<img alt="" :src="item" width="320" height="320" class="rounded-lg">
-					</UCarousel>
-					<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
-					<div class="absolute bottom-0 left-0 right-0 p-6">
+				<div class="relative">
+
+<!--					Carousel-->
+
+					<div class="relative">
+						<ImageCarousel
+							:images="building.images"
+							class="mb-8"
+							height="500px"
+						/>
+					</div>
+
+
+					<div class="absolute top-[86%] p-6">
 						<h1 class="text-4xl font-bold text-white mb-2 drop-shadow-lg">{{ building.name }}</h1>
 					</div>
 				</div>
@@ -46,17 +47,7 @@ const building: BuildingInfo | undefined = getBuildingById(id);
 						<div class="grid gap-6">
 							<div class="flex items-start">
 								<Icon name="mdi:map-marker" class="w-6 h-6 mr-2 mt-1 flex-shrink-0 text-[#52e0c4]" />
-								<span class="text-lg text-[#ccd6f6]">{{ building.location }}</span>
-							</div>
-
-							<div class="flex items-center">
-								<Icon name="mdi:account-tie" class="w-6 h-6 mr-2 flex-shrink-0 text-[#52e0c4]" />
-								<span class="text-lg text-[#ccd6f6]">{{ building.manager }}</span>
-							</div>
-
-							<div class="flex items-center">
-								<Icon name="mdi:account-school" class="w-6 h-6 mr-2 flex-shrink-0 text-[#52e0c4]" />
-								<span class="text-lg text-[#ccd6f6]">{{ building.head_teacher }}</span>
+								<span class="text-lg text-[#ccd6f6]">{{ building.description }}</span>
 							</div>
 
 							<a

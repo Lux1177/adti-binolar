@@ -7,7 +7,10 @@
 </template>
 
 <script setup lang="ts">
-// Page transitions are defined in the layout
+	onMounted(() => {
+		initializeFavorites()
+	})
+
 </script>
 
 <style>
