@@ -37,7 +37,7 @@ const building: BuildingInfo | undefined = getBuildingById(id);
 					</div>
 
 
-					<div class="absolute top-[86%] p-6">
+					<div class="absolute top-[70%] p-6">
 						<h1 class="text-4xl font-bold text-white mb-2 drop-shadow-lg">{{ building.name }}</h1>
 					</div>
 				</div>

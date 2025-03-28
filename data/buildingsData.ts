@@ -26,7 +26,10 @@ export const buildings:BuildingInfo[] = [
 		id: 4,
 		name: 'АДТИ клиникаси',
 		description: 'Ю. Отабеков номли',
-		images: ['/adti-klinikasi.jpg'],
+		images: ['/adti-klinikasi.jpg', "/adti-klinikasi/2.jpg",
+			"/adti-klinikasi/3.jpg", "/adti-klinikasi/4.jpg", "/adti-klinikasi/5.jpg",
+			"/adti-klinikasi/6.jpg", "/adti-klinikasi/7.jpg", "/adti-klinikasi/8.jpg"
+			, "/adti-klinikasi/9.jpg", "/adti-klinikasi/10.jpg"],
 		location_map: ['']
 	},
 	{
