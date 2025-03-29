@@ -12,7 +12,9 @@ export const buildings:BuildingInfo[] = [
 		id: 2,
 		name: '2-бино',
 		description: '2000 ўринлик ўкув бино',
-		images: ['/2-bino.jpg'],
+		images: ['/2-bino.jpg', '/2-bino/1.jpg', '/2-bino/2.jpg', '/2-bino/3.jpg',
+			'/2-bino/4.jpg', '/2-bino/5.jpg', '/2-bino/6.jpg',
+			'/2-bino/7.jpg', '/2-bino/8.jpg', '/2-bino/9.jpg', '/2-bino/10.jpg'],
 		location_map: ['']
 	},
 	{

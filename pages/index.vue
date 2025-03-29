@@ -49,11 +49,13 @@ const buildings:BuildingInfo[] = [
 
 		<div class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 lg:gap-8 justify-center items-center content-center">
 			<div class="" v-for="building in buildings">
-				<BuildingCard
-					:building="building"
-					:key="building.id"
-					type="building"
-				/>
+				<div :class="`grid-item-${building.id}`">
+					<BuildingCard
+						:building="building"
+						:key="building.id"
+						type="building"
+					/>
+				</div>
 			</div>
 		</div>
 
@@ -68,5 +70,10 @@ const buildings:BuildingInfo[] = [
 		</div>
 	</div>
 </template>
+
+<style scoped>
+
+
+</style>
 
 

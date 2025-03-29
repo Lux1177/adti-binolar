@@ -34,8 +34,8 @@ onMounted(() => {
 
 <template>
 	<div class="building-card relative">
-		<div @click="changeIsFav" class="absolute right-2 top-2 z-50 bg-black/10 rounded-lg px-1 py-0.5">
-			<Icon :name="isFav ? 'mdi:heart' : 'mdi:heart-outline'" class="w-9 h-9 text-red-500 hover:scale-105"/>
+		<div @click="changeIsFav" class="absolute right-2 top-2 z-50 bg-black/30 rounded-lg px-1 py-0.5 hover:scale-110 transition">
+			<Icon :name="isFav ? 'mdi:heart' : 'mdi:heart-outline'" class="w-9 h-9 text-red-500"/>
 		</div>
 		<div
 			@click="navigateToBuilding"
