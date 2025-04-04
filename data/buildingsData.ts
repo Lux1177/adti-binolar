@@ -37,8 +37,11 @@ export const buildings:BuildingInfo[] = [
 	{
 		id: 5,
 		name: 'Талабалар турар жойи',
-		description: '',
-		images: ['/adti-talabalar-turargi-joy.jpg'],
-		location_map: ['']
+		description: 'Талабалар турар жойлари',
+		images: ["/ttj.jpg", "/ttj/1.png", "/ttj/2.png", "/ttj/3.png", "/ttj/4.png",
+			"/ttj/5.png", "/ttj/6.png", "/ttj/7.png", "/ttj/8.png", "/ttj/9.png", "/ttj/10.png",
+			"/ttj/11.png", "/ttj/12.png", "/ttj/13.png", "/ttj/14.png", "/ttj/15.png", "/ttj/16.png",
+			"/ttj/17.png"],
+		location_map: ['defefw']
 	},
 ]
