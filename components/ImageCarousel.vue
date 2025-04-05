@@ -15,7 +15,7 @@ interface Props {
 
 const props = withDefaults(defineProps<Props>(), {
 	autoplay: true,
-	interval: 5000,
+	interval: 3000,
 	showControls: true,
 	showIndicators: true,
 	showThumbnails: true,
@@ -122,9 +122,10 @@ watch(() => props.images, resetAutoplay, { deep: true })
 				v-for="(image, index) in images"
 				:key="index"
 				@click="goToSlide(index)"
-				:class="{'scale-110': currentIndex === index}"
+				class="rounded overflow-hidden w-16 h-10 transition-transform duration-200"
+				:class="{ 'scale-110 ring-2 ring-blue-500': index === currentIndex }"
 			>
-			<img :src="image" class="w-full h-full object-cover" />
+				<img :src="image" class="w-full h-full object-cover" />
 			</button>
 		</div>
 
@@ -135,14 +136,6 @@ watch(() => props.images, resetAutoplay, { deep: true })
 <style scoped>
 button {
 	transition: transform 0.2s ease-in-out;
-}
-
-button {
-	@apply rounded overflow-hidden w-16 h-10 transition-transform duration-200;
-}
-
-button.scale-110 {
-	transform: scale(1.10); /* Scaling to 110% */
 }
 
 img {

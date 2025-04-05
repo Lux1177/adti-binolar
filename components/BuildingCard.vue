@@ -23,7 +23,7 @@ const navigateToBuilding = () => {
 </script>
 
 <template>
-	<div class="building-card">
+	<div class="building-card w-full">
 		<div
 			@click="navigateToBuilding"
 			class="cursor-pointer bg-[#091a2a] rounded-xl shadow-lg overflow-hidden transform transition-all duration-300 hover:scale-105 hover:border-[#52e0c4] border border-[#1b2b3a]"

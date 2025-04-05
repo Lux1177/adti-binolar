@@ -6,16 +6,16 @@ import {buildings} from '@/data/buildingsData'
 	<div class="container mx-auto px-4 py-12">
 		<h1 class="text-3xl font-bold mb-8 bg-gradient-to-r from-[#52e0c4] to-[#728098] bg-clip-text text-transparent">Бинолар</h1>
 
-		<div class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 lg:gap-8 justify-center items-center content-center">
-			<div class="" v-for="building in buildings">
-				<div :class="`grid-item-${building.id}`">
-					<BuildingCard
-						:building="building"
-						:key="building.id"
-					/>
-				</div>
+		<div class="flex flex-wrap justify-center">
+			<div
+				v-for="building in buildings"
+				:key="building.id"
+				class="w-2/3 sm:w-1/3 lg:w-1/3 flex justify-center p-4"
+			>
+				<BuildingCard :building="building" />
 			</div>
 		</div>
+
 
 		<div class="mt-8 text-center">
 			<NuxtLink
