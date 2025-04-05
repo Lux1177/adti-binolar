@@ -55,14 +55,22 @@ const building = computed(() => {
 								<span class="text-lg text-[#ccd6f6]">{{ building.head_teacher }}</span>
 							</div>
 
-							<a
-								:href="building.location_map"
+							<NuxtLink
+								:to="building.location_google"
 								target="_blank"
 								class="inline-flex items-center text-[#52e0c4] hover:text-[#b0c7e6] transition-colors"
 							>
-								<Icon name="mdi:map" class="w-6 h-6 mr-2" />
-								<span class="text-lg">Харитада кўриш</span>
-							</a>
+								<Icon name="grommet-icons:map" class="w-6 h-6 mr-2" />
+								<span class="text-lg">Google харитада кўриш</span>
+							</NuxtLink>
+							<NuxtLink
+								:to="building.location_yandex"
+								target="_blank"
+								class="inline-flex items-center text-[#52e0c4] hover:text-[#b0c7e6] transition-colors"
+							>
+								<Icon name="grommet-icons:map" class="w-6 h-6 mr-2" />
+								<span class="text-lg">Yandex харитада кўриш</span>
+							</NuxtLink>
 						</div>
 					</div>
 				</div>

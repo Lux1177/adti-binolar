@@ -26,7 +26,9 @@ const navigateToBuilding = () => {
 	<div class="building-card w-full">
 		<div
 			@click="navigateToBuilding"
-			class="cursor-pointer bg-[#091a2a] rounded-xl shadow-lg overflow-hidden transform transition-all duration-300 hover:scale-105 hover:border-[#52e0c4] border border-[#1b2b3a]"
+			class="cursor-pointer bg-[#091a2a] rounded-xl shadow-lg
+			overflow-hidden transform transition-all duration-300 hover:scale-105
+			hover:border-[#52e0c4] border border-[#1b2b3a]"
 			ref="cardElement"
 		>
 			<div class="relative h-32 sm:h-40 md:h-48">
@@ -35,10 +37,13 @@ const navigateToBuilding = () => {
 					:alt="building.name"
 					class="w-full h-full object-cover"
 				/>
-				<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+				<div class="absolute inset-0 bg-gradient-to-t from-black/60
+				to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
 			</div>
 			<div class="p-3 sm:p-4 md:p-6">
-				<h2 class="text-base sm:text-lg md:text-xl font-semibold text-[#ccd6f6] mb-2 line-clamp-2 bg-gradient-to-r from-[#52e0c4] to-[#728098] bg-clip-text text-transparent">
+				<h2 class="text-base sm:text-lg md:text-xl font-semibold
+				text-[#ccd6f6] mb-2 line-clamp-2 bg-gradient-to-r
+				from-[#52e0c4] to-[#728098] bg-clip-text text-transparent">
 					{{ building.name }}
 				</h2>
 				<div class="flex items-start text-[#a8b2d1] gap-1">

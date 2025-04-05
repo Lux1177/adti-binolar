@@ -6,7 +6,8 @@ export interface Building {
 	description?: string;
 	manager: string;
 	head_teacher: string;
-	location_map: string;
+	location_google: string;
+	location_yandex: string;
 }
 
 export interface BuildingInfo {
@@ -14,5 +15,6 @@ export interface BuildingInfo {
 	name: string;
 	description: string;
 	images: string[];
-	location_map: string[];
+	location_google: string;
+	location_yandex: string;
 }
