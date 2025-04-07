@@ -75,7 +75,7 @@ export const faculties: Building[] = [
 		id: 8,
 		name: "Дерматовенерология кафедраси",
 		location: "Вилоят тери-таносил касалликлар шифохонаси",
-		image: "https://adti.uz/wp-content/uploads/2024/08/1V9A4383.jpg",
+		image: "/kafedralar/derma.jpg",
 		manager: "Мудири Пакирдинов А.Б. - (90) 571-17-75",
 		head_teacher: "Завуч Кучкаров А. - (97) 380-36-33",
 		location_google: "https://maps.app.goo.gl/BThFmZpCXSz5x6nG6",
@@ -148,8 +148,8 @@ export const faculties: Building[] = [
 		image: "https://adti.uz/wp-content/uploads/2024/08/1V9A4383.jpg",
 		manager: "Мудири Артикова С.Г.  - (99) 316-71-00",
 		head_teacher: "Завуч Юнусова Зебо - (93) 427-42-22",
-		location_google: "https://maps.google.com/maps?q=40.808012,72.328795&ll=40.808012,72.328795&z=16",
-		location_yandex: "https://maps.app.goo.gl/zDdiuVu8roHggh8y6"
+		location_google: "https://maps.app.goo.gl/5zZsMiiP8M9ArFPf7",
+		location_yandex: "https://yandex.uz/maps/-/CHVnmY22"
 	},
 	{
 		id: 16,
@@ -158,10 +158,8 @@ export const faculties: Building[] = [
 		image: "https://adti.uz/wp-content/uploads/2024/08/1V9A4383.jpg",
 		manager: "Мудири Артикова С.Г.  - (99) 316-71-00",
 		head_teacher: "Завуч Юнусова Зебо - (93) 427-42-22",
-		location_google: "yandex.uz/maps/10329/andijan/?ll=72.343897%2C40.784689&mode=" +
-				"whatshere&whatshere%5Bpoint%5D=72.348606%2C40.780370&whatshere%5Bzoom%5D=" +
-				"17&z=17ati, Узбекистан",
-		location_yandex: "https://maps.app.goo.gl/zDdiuVu8roHggh8y6"
+		location_google: "https://maps.app.goo.gl/XnZaJXtofB38ENGC8",
+		location_yandex: "https://yandex.uz/maps/-/CHVnJIMp"
 	},
 	{
 		id: 17,
@@ -170,10 +168,8 @@ export const faculties: Building[] = [
 		image: "https://adti.uz/wp-content/uploads/2024/08/1V9A4383.jpg",
 		manager: "Мудири Артикова С.Г.  - (99) 316-71-00",
 		head_teacher: "Завуч Юнусова Зебо - (93) 427-42-22",
-		location_google: "https://yandex.uz/maps/10329/andijan/?ll=72.343897%2C40." +
-				"784689&mode=whatshere&whatshere%5Bpoint%5D=72.348606%2C40.780370&wh" +
-				"atshere%5Bzoom%5D=17&z=17",
-		location_yandex: "https://maps.app.goo.gl/zDdiuVu8roHggh8y6"
+		location_google: "https://maps.app.goo.gl/XnZaJXtofB38ENGC8",
+		location_yandex: "https://yandex.uz/maps/-/CHVnJIMp"
 	},
 	{
 		id: 18,
@@ -182,10 +178,8 @@ export const faculties: Building[] = [
 		image: "https://adti.uz/wp-content/uploads/2024/08/1V9A4383.jpg",
 		manager: "Мудири Артикова С.Г.  - (99) 316-71-00",
 		head_teacher: "Завуч Юнусова Зебо - (93) 427-42-22",
-		location_google: "yandex.uz/maps/10329/andijan/?ll=72.343897%2C40." +
-				"784689&mode=whatshere&whatshere%5Bpoint%5D=72.348606%2C40." +
-				"780370&whatshere%5Bzoom%5D=17&z=17ati, Узбекистан",
-		location_yandex: "https://maps.app.goo.gl/zDdiuVu8roHggh8y6"
+		location_google: "https://maps.app.goo.gl/XnZaJXtofB38ENGC8",
+		location_yandex: "https://yandex.uz/maps/-/CHVnJIMp"
 	},
 	{
 		id: 19,
@@ -195,7 +189,7 @@ export const faculties: Building[] = [
 		manager: "Мудири Артикова С.Г.  - (99) 316-71-00",
 		head_teacher: "Завуч Юнусова Зебо - (93) 427-42-22",
 		location_google: "https://maps.app.goo.gl/wRwe4oJZTMDD8gsf6",
-		location_yandex: "https://maps.app.goo.gl/zDdiuVu8roHggh8y6"
+		location_yandex: "https://yandex.uz/maps/-/CHVnj4ML"
 	},
 	{
 		id: 20,
@@ -204,10 +198,8 @@ export const faculties: Building[] = [
 		image: "https://adti.uz/wp-content/uploads/2024/08/1V9A4383.jpg",
 		manager: "Мудири Артикова С.Г.  - (99) 316-71-00",
 		head_teacher: "Завуч Юнусова Зебо - (93) 427-42-22",
-		location_google: "https://yandex.uz/maps/10329/andijan/?ll=72." +
-				"343897%2C40.784689&mode=whatshere&whatshere%5Bpoint%5D=72." +
-				"348606%2C40.780370&whatshere%5Bzoom%5D=17&z=17",
-		location_yandex: "https://maps.app.goo.gl/zDdiuVu8roHggh8y6"
+		location_google: "https://maps.app.goo.gl/XnZaJXtofB38ENGC8",
+		location_yandex: "https://yandex.uz/maps/-/CHVnJIMp"
 	},
 	{
 		id: 21,
@@ -216,9 +208,8 @@ export const faculties: Building[] = [
 		image: "https://adti.uz/wp-content/uploads/2024/08/1V9A4383.jpg",
 		manager: "Мудири Артикова С.Г.  - (99) 316-71-00",
 		head_teacher: "Завуч Юнусова Зебо - (93) 427-42-22",
-		location_google: "https://yandex.uz/maps/10329/andijan/?ll=72.343897%2C40." +
-				"784689&mode=whatshere&whatshere%5Bpoint%5D=72.348606%2C40.780370&whatshere%5Bzoom%5D=17&z=17",
-		location_yandex: "https://maps.app.goo.gl/zDdiuVu8roHggh8y6"
+		location_google: "https://maps.app.goo.gl/XnZaJXtofB38ENGC8",
+		location_yandex: "https://yandex.uz/maps/-/CHVnJIMp"
 	},
 	{
 		id: 22,
@@ -227,10 +218,8 @@ export const faculties: Building[] = [
 		image: "https://adti.uz/wp-content/uploads/2024/08/1V9A4383.jpg",
 		manager: "Мудири Артикова С.Г.  - (99) 316-71-00",
 		head_teacher: "Завуч Юнусова Зебо - (93) 427-42-22",
-		location_google: "https://yandex.uz/maps/10329/andijan/?ll=72." +
-				"343897%2C40.784689&mode=whatshere&whatshere%5Bpoint%5D=72." +
-				"348606%2C40.780370&whatshere%5Bzoom%5D=17&z=17",
-		location_yandex: "https://maps.app.goo.gl/zDdiuVu8roHggh8y6"
+		location_google: "https://maps.app.goo.gl/XnZaJXtofB38ENGC8",
+		location_yandex: "https://yandex.uz/maps/-/CHVnJIMp"
 	},
 	{
 		id: 23,
@@ -239,9 +228,8 @@ export const faculties: Building[] = [
 		image: "https://adti.uz/wp-content/uploads/2024/08/1V9A4383.jpg",
 		manager: "Мудири Артикова С.Г.  - (99) 316-71-00",
 		head_teacher: "Завуч Юнусова Зебо - (93) 427-42-22",
-		location_google: "https://yandex.uz/maps/10329/andijan/?ll=72.343897%2C40." +
-				"784689&mode=whatshere&whatshere%5Bpoint%5D=72.348606%2C40.780370&whatshere%5Bzoom%5D=17&z=17",
-		location_yandex: "https://maps.app.goo.gl/zDdiuVu8roHggh8y6"
+		location_google: "https://maps.app.goo.gl/XnZaJXtofB38ENGC8",
+		location_yandex: "https://yandex.uz/maps/-/CHVnJIMp"
 	},
 	{
 		id: 24,
@@ -251,7 +239,7 @@ export const faculties: Building[] = [
 		manager: "Мудири Артикова С.Г.  - (99) 316-71-00",
 		head_teacher: "Завуч Юнусова Зебо - (93) 427-42-22",
 		location_google: "https://maps.app.goo.gl/wRwe4oJZTMDD8gsf6",
-		location_yandex: "https://maps.app.goo.gl/zDdiuVu8roHggh8y6"
+		location_yandex: "https://yandex.uz/maps/-/CHVnj4ML"
 	},
 	{
 		id: 25,
@@ -261,7 +249,7 @@ export const faculties: Building[] = [
 		manager: "Мудири Артикова С.Г.  - (99) 316-71-00",
 		head_teacher: "Завуч Юнусова Зебо - (93) 427-42-22",
 		location_google: "https://maps.app.goo.gl/wRwe4oJZTMDD8gsf6",
-		location_yandex: "https://maps.app.goo.gl/zDdiuVu8roHggh8y6"
+		location_yandex: "https://yandex.uz/maps/-/CHVnj4ML"
 	},
 	{
 		id: 26,
@@ -270,8 +258,8 @@ export const faculties: Building[] = [
 		image: "https://adti.uz/wp-content/uploads/2024/08/1V9A4383.jpg",
 		manager: "Мудири Артикова С.Г.  - (99) 316-71-00",
 		head_teacher: "Завуч Юнусова Зебо - (93) 427-42-22",
-		location_google: "https://maps.google.com/maps?q=40.808012,72.328795&ll=40.808012,72.328795&z=16",
-		location_yandex: "https://maps.app.goo.gl/zDdiuVu8roHggh8y6"
+		location_google: "https://maps.app.goo.gl/mtTrdDEHd1BcqPc19",
+		location_yandex: "https://yandex.uz/maps/-/CHVnjPyw"
 	},
 	{
 		id: 27,
@@ -281,7 +269,7 @@ export const faculties: Building[] = [
 		manager: "Мудири Артикова С.Г.  - (99) 316-71-00",
 		head_teacher: "Завуч Юнусова Зебо - (93) 427-42-22",
 		location_google: "https://maps.app.goo.gl/wRwe4oJZTMDD8gsf6",
-		location_yandex: "https://maps.app.goo.gl/zDdiuVu8roHggh8y6"
+		location_yandex: "https://yandex.uz/maps/-/CHVnj4ML"
 	},
 	{
 		id: 28,
@@ -290,9 +278,8 @@ export const faculties: Building[] = [
 		image: "https://adti.uz/wp-content/uploads/2024/08/1V9A4383.jpg",
 		manager: "Мудири Артикова С.Г.  - (99) 316-71-00",
 		head_teacher: "Завуч Юнусова Зебо - (93) 427-42-22",
-		location_google: "https://yandex.uz/maps/10329/andijan/?ll=72.343897%2C40." +
-				"784689&mode=whatshere&whatshere%5Bpoint%5D=72.348606%2C40.780370&whatshere%5Bzoom%5D=17&z=17",
-		location_yandex: "https://maps.app.goo.gl/zDdiuVu8roHggh8y6"
+		location_google: "https://maps.app.goo.gl/XnZaJXtofB38ENGC8",
+		location_yandex: "https://yandex.uz/maps/-/CHVnJIMp"
 	},
 	{
 		id: 29,
@@ -301,8 +288,7 @@ export const faculties: Building[] = [
 		image: "https://adti.uz/wp-content/uploads/2024/08/1V9A4383.jpg",
 		manager: "Мудири Артикова С.Г.  - (99) 316-71-00",
 		head_teacher: "Завуч Юнусова Зебо - (93) 427-42-22",
-		location_google: "https://yandex.uz/maps/10329/andijan/?ll=72.343897%2C40." +
-				"784689&mode=whatshere&whatshere%5Bpoint%5D=72.348606%2C40.780370&whatshere%5Bzoom%5D=17&z=17",
-		location_yandex: "https://maps.app.goo.gl/zDdiuVu8roHggh8y6"
+		location_google: "https://maps.app.goo.gl/XnZaJXtofB38ENGC8",
+		location_yandex: "https://yandex.uz/maps/-/CHVnJIMp"
 	}
 ]
