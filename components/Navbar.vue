@@ -1,5 +1,4 @@
 <template>
-	<header class="fixed top-0 left-0 right-0 z-50 bg-[#020c1b] border-b border-[#091a2a] backdrop-blur-sm bg-opacity-90">
 		<div class="container mx-auto px-4">
 			<div class="flex items-center justify-between py-3">
 				<NuxtLink to="/" class="flex items-center hover:scale-110 transition ease-in">
