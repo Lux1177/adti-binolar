@@ -15,8 +15,8 @@ export const buildings:BuildingInfo[] = [
 		description: 'Чоргузар',
 		images: ['/3-bino.jpg', '/3-bino/1.jpg', '/3-bino/2.jpg', '/3-bino/3.jpg',
 			'/3-bino/4.jpg', '/3-bino/5.jpg'],
-		location_google: 'https://maps.google.com/maps?q=40.811495,72.329083&ll=40.811495,72.329083&z=16',
-		location_yandex: 'https://yandex.uz/maps/-/CHVFV45v'
+		location_google: 'https://maps.app.goo.gl/Y9BzreNgXoR4h2pGA',
+		location_yandex: 'https://yandex.uz/maps/-/CHVGr8~m'
 	},
 	{
 		id: 3,

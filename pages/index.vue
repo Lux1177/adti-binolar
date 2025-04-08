@@ -10,7 +10,7 @@ import {buildings} from '@/data/buildingsData'
 			<div
 				v-for="building in buildings"
 				:key="building.id"
-				class="w-2/3 sm:w-1/3 lg:w-1/3 flex justify-center p-4"
+				class="w-full sm:w-full md:w-1/2 lg:w-1/3 flex justify-center p-4"
 			>
 				<BuildingCard :building="building" />
 			</div>

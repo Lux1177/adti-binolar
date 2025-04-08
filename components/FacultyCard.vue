@@ -77,8 +77,4 @@ onMounted(() => {
 		transform: translateY(0);
 	}
 }
-
-.building-card {
-	animation: fadeIn 0.5s ease-out forwards;
-}
 </style>

@@ -135,7 +135,7 @@ export const faculties: Building[] = [
 		id: 14,
 		name: "Педиатрия факультети учун ички касалликлари пропедевтикаси",
 		location: "ШКТТМ (санчас) ва Вилоят кардиология маркази",
-		image: "https://adti.uz/wp-content/uploads/2024/08/1V9A4383.jpg",
+		image: "/kafedralar/sanchas.jpg",
 		manager: "Мудири Артикова С.Г.  - (99) 316-71-00",
 		head_teacher: "Завуч Юнусова Зебо - (93) 427-42-22",
 		location_google: "https://maps.app.goo.gl/VmUYPURQQuq6rYzS9",
@@ -155,31 +155,31 @@ export const faculties: Building[] = [
 		id: 16,
 		name: "Фтизиатрия ва пулманология, микробиология ,иммунология ва вирусология кафедраси",
 		location: "Улица: Абдурауф Фитрат 212",
-		image: "https://adti.uz/wp-content/uploads/2024/08/1V9A4383.jpg",
+		image: "/3-bino.jpg",
 		manager: "Мудири Артикова С.Г.  - (99) 316-71-00",
 		head_teacher: "Завуч Юнусова Зебо - (93) 427-42-22",
-		location_google: "https://maps.app.goo.gl/XnZaJXtofB38ENGC8",
-		location_yandex: "https://yandex.uz/maps/-/CHVnJIMp"
+		location_google: 'https://maps.app.goo.gl/Y9BzreNgXoR4h2pGA',
+		location_yandex: 'https://yandex.uz/maps/-/CHVGr8~m'
 	},
 	{
 		id: 17,
 		name: "1-Фармацевтик фанлар кафедраси",
 		location: "Улица: Абдурауф Фитрат 212",
-		image: "https://adti.uz/wp-content/uploads/2024/08/1V9A4383.jpg",
+		image: "/3-bino.jpg",
 		manager: "Мудири Артикова С.Г.  - (99) 316-71-00",
 		head_teacher: "Завуч Юнусова Зебо - (93) 427-42-22",
-		location_google: "https://maps.app.goo.gl/XnZaJXtofB38ENGC8",
-		location_yandex: "https://yandex.uz/maps/-/CHVnJIMp"
+		location_google: 'https://maps.app.goo.gl/Y9BzreNgXoR4h2pGA',
+		location_yandex: 'https://yandex.uz/maps/-/CHVGr8~m'
 	},
 	{
 		id: 18,
 		name: "2-Фармацевтик фанлар кафедраси",
 		location: "Улица: Абдурауф Фитрат 212",
-		image: "https://adti.uz/wp-content/uploads/2024/08/1V9A4383.jpg",
+		image: "/3-bino.jpg",
 		manager: "Мудири Артикова С.Г.  - (99) 316-71-00",
 		head_teacher: "Завуч Юнусова Зебо - (93) 427-42-22",
-		location_google: "https://maps.app.goo.gl/XnZaJXtofB38ENGC8",
-		location_yandex: "https://yandex.uz/maps/-/CHVnJIMp"
+		location_google: 'https://maps.app.goo.gl/Y9BzreNgXoR4h2pGA',
+		location_yandex: 'https://yandex.uz/maps/-/CHVGr8~m'
 	},
 	{
 		id: 19,
@@ -195,41 +195,41 @@ export const faculties: Building[] = [
 		id: 20,
 		name: "Ижтимоий - гуманитар фанлар кафедраси",
 		location: "Улица: Абдурауф Фитрат 212",
-		image: "https://adti.uz/wp-content/uploads/2024/08/1V9A4383.jpg",
+		image: "/3-bino.jpg",
 		manager: "Мудири Артикова С.Г.  - (99) 316-71-00",
 		head_teacher: "Завуч Юнусова Зебо - (93) 427-42-22",
-		location_google: "https://maps.app.goo.gl/XnZaJXtofB38ENGC8",
-		location_yandex: "https://yandex.uz/maps/-/CHVnJIMp"
+		location_google: 'https://maps.app.goo.gl/Y9BzreNgXoR4h2pGA',
+		location_yandex: 'https://yandex.uz/maps/-/CHVGr8~m'
 	},
 	{
 		id: 21,
 		name: "Биологик кимё кафедраси",
 		location: "Улица: Абдурауф Фитрат 212",
-		image: "https://adti.uz/wp-content/uploads/2024/08/1V9A4383.jpg",
+		image: "/3-bino.jpg",
 		manager: "Мудири Артикова С.Г.  - (99) 316-71-00",
 		head_teacher: "Завуч Юнусова Зебо - (93) 427-42-22",
-		location_google: "https://maps.app.goo.gl/XnZaJXtofB38ENGC8",
-		location_yandex: "https://yandex.uz/maps/-/CHVnJIMp"
+		location_google: 'https://maps.app.goo.gl/Y9BzreNgXoR4h2pGA',
+		location_yandex: 'https://yandex.uz/maps/-/CHVGr8~m'
 	},
 	{
 		id: 22,
 		name: "Тиббий кимё кафедраси",
 		location: "Улица: Абдурауф Фитрат 212",
-		image: "https://adti.uz/wp-content/uploads/2024/08/1V9A4383.jpg",
+		image: "/3-bino.jpg",
 		manager: "Мудири Артикова С.Г.  - (99) 316-71-00",
 		head_teacher: "Завуч Юнусова Зебо - (93) 427-42-22",
-		location_google: "https://maps.app.goo.gl/XnZaJXtofB38ENGC8",
-		location_yandex: "https://yandex.uz/maps/-/CHVnJIMp"
+		location_google: 'https://maps.app.goo.gl/Y9BzreNgXoR4h2pGA',
+		location_yandex: 'https://yandex.uz/maps/-/CHVGr8~m'
 	},
 	{
 		id: 23,
 		name: "Тиббий биология ва гистология кафедраси",
 		location: "Улица: Абдурауф Фитрат 212",
-		image: "https://adti.uz/wp-content/uploads/2024/08/1V9A4383.jpg",
+		image: "/3-bino.jpg",
 		manager: "Мудири Артикова С.Г.  - (99) 316-71-00",
 		head_teacher: "Завуч Юнусова Зебо - (93) 427-42-22",
-		location_google: "https://maps.app.goo.gl/XnZaJXtofB38ENGC8",
-		location_yandex: "https://yandex.uz/maps/-/CHVnJIMp"
+		location_google: 'https://maps.app.goo.gl/Y9BzreNgXoR4h2pGA',
+		location_yandex: 'https://yandex.uz/maps/-/CHVGr8~m'
 	},
 	{
 		id: 24,
@@ -275,20 +275,20 @@ export const faculties: Building[] = [
 		id: 28,
 		name: "Тиббий профилактика кафедраси",
 		location: "Улица: Абдурауф Фитрат 212",
-		image: "https://adti.uz/wp-content/uploads/2024/08/1V9A4383.jpg",
+		image: "/3-bino.jpg",
 		manager: "Мудири Артикова С.Г.  - (99) 316-71-00",
 		head_teacher: "Завуч Юнусова Зебо - (93) 427-42-22",
-		location_google: "https://maps.app.goo.gl/XnZaJXtofB38ENGC8",
-		location_yandex: "https://yandex.uz/maps/-/CHVnJIMp"
+		location_google: 'https://maps.app.goo.gl/Y9BzreNgXoR4h2pGA',
+		location_yandex: 'https://yandex.uz/maps/-/CHVGr8~m'
 	},
 	{
 		id: 29,
 		name: "Ўзбек тили ва адабиёти, тиллар кафедраси",
 		location: "Улица: Абдурауф Фитрат 212",
-		image: "https://adti.uz/wp-content/uploads/2024/08/1V9A4383.jpg",
+		image: "/3-bino.jpg",
 		manager: "Мудири Артикова С.Г.  - (99) 316-71-00",
 		head_teacher: "Завуч Юнусова Зебо - (93) 427-42-22",
-		location_google: "https://maps.app.goo.gl/XnZaJXtofB38ENGC8",
-		location_yandex: "https://yandex.uz/maps/-/CHVnJIMp"
+		location_google: 'https://maps.app.goo.gl/Y9BzreNgXoR4h2pGA',
+		location_yandex: 'https://yandex.uz/maps/-/CHVGr8~m'
 	}
 ]

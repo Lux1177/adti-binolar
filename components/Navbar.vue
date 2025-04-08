@@ -2,10 +2,10 @@
 	<header class="fixed top-0 left-0 right-0 z-50 bg-[#020c1b] border-b border-[#091a2a] backdrop-blur-sm bg-opacity-90">
 		<div class="container mx-auto px-4">
 			<div class="flex items-center justify-between py-3">
-				<div class="flex items-center">
+				<NuxtLink to="/" class="flex items-center hover:scale-110 transition ease-in">
 					<Icon name="mdi:school-outline" class="w-6 h-6 text-[#52e0c4]" />
 					<span class="font-bold text-lg bg-gradient-to-r from-[#52e0c4] to-[#728098] bg-clip-text text-transparent ml-2">ADTI</span>
-				</div>
+				</NuxtLink>
 
 				<nav class="flex overflow-x-auto justify-end md:justify-end w-full md:w-auto">
 					<NuxtLink
