@@ -38,7 +38,6 @@
 				</nav>
 			</div>
 		</div>
-	</header>
 </template>
 
 <script setup lang="ts">
@@ -57,7 +56,7 @@ const tabs = [
 	},
 	{
 		id: 'favorites',
-		name: 'Севимлилар',
+		name: 'Танланганлар',
 		icon: 'mdi:heart',
 		path: '/favorites'
 	}

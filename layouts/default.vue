@@ -2,7 +2,7 @@
 	<div class="min-h-screen flex flex-col bg-[#020c1b] text-[#ccd6f6] transition-colors duration-300">
 		<Navbar />
 
-		<main class="flex-1 mt-[57px] min-h-[calc(100vh-57px)]">
+		<main class="flex-1 min-h-[calc(100vh-57px)]">
 			<NuxtPage />
 		</main>
 	</div>
