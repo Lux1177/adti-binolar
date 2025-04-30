@@ -56,7 +56,10 @@ onMounted(() => {
 				</h2>
 				<div class="flex items-start text-[#a8b2d1] gap-1">
 					<Icon name="mdi:map-marker" class="w-4 h-4 sm:w-5 sm:h-5 mr-1 sm:mr-2 mt-1 flex-shrink-0 text-[#52e0c4]" />
-					<span class="text-sm sm:text-base line-clamp-2">{{ building.location }}</span>
+					<span class="text-sm sm:text-base line-clamp-2">
+						<span v-for="location in building.locations">{{ location.name }}<span v-if="location.id != building.locations.length">, </span>
+						</span>
+					</span>
 				</div>
 			</div>
 		</div>
