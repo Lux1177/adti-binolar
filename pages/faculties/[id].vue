@@ -48,48 +48,6 @@ const stateLocations = computed(() =>
 				</div>
 
 				<div class="p-8 space-y-10">
-					<!-- Частные -->
-					<div v-if="privateLocations.length">
-						<h2 class="text-2xl font-bold mb-4 text-[#52e0c4]">Частные локации</h2>
-						<div class="grid gap-8">
-							<div
-								v-for="location in privateLocations"
-								:key="location.id"
-								class="bg-[#0f2a3e] p-6 rounded-xl border border-[#1e3a56]"
-							>
-								<h3 class="text-xl font-semibold mb-4 text-white">{{ location.name }}</h3>
-
-								<div class="flex items-start mb-2">
-									<Icon name="mdi:account-tie" class="w-6 h-6 mr-2 text-[#52e0c4]" />
-									<span class="text-lg">{{ location.manager }}</span>
-								</div>
-
-								<div class="flex items-start mb-4">
-									<Icon name="mdi:account-school" class="w-6 h-6 mr-2 text-[#52e0c4]" />
-									<span class="text-lg">{{ location.head_teacher }}</span>
-								</div>
-
-								<div class="flex flex-col gap-2">
-									<NuxtLink
-										:to="location.location_google"
-										target="_blank"
-										class="inline-flex items-center text-[#52e0c4] hover:text-[#b0c7e6] transition-colors"
-									>
-										<Icon name="grommet-icons:map" class="w-5 h-5 mr-2" />
-										Google харитада кўриш
-									</NuxtLink>
-									<NuxtLink
-										:to="location.location_yandex"
-										target="_blank"
-										class="inline-flex items-center text-[#52e0c4] hover:text-[#b0c7e6] transition-colors"
-									>
-										<Icon name="grommet-icons:map" class="w-5 h-5 mr-2" />
-										Yandex харитада кўриш
-									</NuxtLink>
-								</div>
-							</div>
-						</div>
-					</div>
 
 					<!-- Государственные -->
 					<div v-if="stateLocations.length">
@@ -133,6 +91,49 @@ const stateLocations = computed(() =>
 							</div>
 						</div>
 					</div>
+					<!-- Частные -->
+					<div v-if="privateLocations.length">
+						<h2 class="text-2xl font-bold mb-4 text-[#52e0c4]">Хусусий локациялар</h2>
+						<div class="grid gap-8">
+							<div
+								v-for="location in privateLocations"
+								:key="location.id"
+								class="bg-[#0f2a3e] p-6 rounded-xl border border-[#1e3a56]"
+							>
+								<h3 class="text-xl font-semibold mb-4 text-white">{{ location.name }}</h3>
+
+								<div class="flex items-start mb-2">
+									<Icon name="mdi:account-tie" class="w-6 h-6 mr-2 text-[#52e0c4]" />
+									<span class="text-lg">{{ location.manager }}</span>
+								</div>
+
+								<div class="flex items-start mb-4">
+									<Icon name="mdi:account-school" class="w-6 h-6 mr-2 text-[#52e0c4]" />
+									<span class="text-lg">{{ location.head_teacher }}</span>
+								</div>
+
+								<div class="flex flex-col gap-2">
+									<NuxtLink
+										:to="location.location_google"
+										target="_blank"
+										class="inline-flex items-center text-[#52e0c4] hover:text-[#b0c7e6] transition-colors"
+									>
+										<Icon name="grommet-icons:map" class="w-5 h-5 mr-2" />
+										Google харитада кўриш
+									</NuxtLink>
+									<NuxtLink
+										:to="location.location_yandex"
+										target="_blank"
+										class="inline-flex items-center text-[#52e0c4] hover:text-[#b0c7e6] transition-colors"
+									>
+										<Icon name="grommet-icons:map" class="w-5 h-5 mr-2" />
+										Yandex харитада кўриш
+									</NuxtLink>
+								</div>
+							</div>
+						</div>
+					</div>
+
 				</div>
 			</div>
 
