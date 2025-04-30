@@ -1,13 +1,8 @@
 export interface Building {
 	id: number;
 	name: string;
-	location: string;
-	image: string;
-	description?: string;
-	manager: string;
-	head_teacher: string;
-	location_google: string;
-	location_yandex: string;
+	images: string[];
+	locations: Location[]
 }
 
 export interface BuildingInfo {
@@ -15,6 +10,16 @@ export interface BuildingInfo {
 	name: string;
 	description: string;
 	images: string[];
+	location_google: string;
+	location_yandex: string;
+}
+
+export interface Location {
+	id: number;
+	type: 'private' | 'state';
+	name: string;
+	manager: string;
+	head_teacher: string;
 	location_google: string;
 	location_yandex: string;
 }
