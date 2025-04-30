@@ -1,7 +1,7 @@
 <template>
 		<div class="container mx-auto px-4">
 			<div class="flex items-center justify-between py-3">
-				<NuxtLink to="/" class="flex items-center hover:scale-110 transition ease-in">
+				<NuxtLink to="https://my.agmi.uz/" class="flex items-center hover:scale-110 transition ease-in">
 					<Icon name="mdi:school-outline" class="w-6 h-6 text-[#52e0c4]" />
 					<span class="font-bold text-lg bg-gradient-to-r from-[#52e0c4] to-[#728098] bg-clip-text text-transparent ml-2">ADTI</span>
 				</NuxtLink>
