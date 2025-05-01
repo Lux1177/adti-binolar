@@ -99,22 +99,24 @@ const privateLocationsGridClass = computed(() => getGridClass(privateLocations.v
 
 								<div class="space-y-4 mb-6">
 									<div class="flex items-start">
-										<div class="bg-[#0a192f] p-2 rounded-lg mr-3">
-											<Icon name="mdi:account-tie" class="w-5 h-5 text-[#64ffda]" />
-										</div>
-										<div>
-											<div class="text-sm text-[#8892b0] mb-1">Раҳбар</div>
-											<div class="text-white">{{ location.manager }}</div>
+										<div class="flex items-center">
+											<div class="bg-[#0a192f] p-2 rounded-lg mr-3">
+												<Icon name="mdi:account-tie" class="w-5 h-5 text-[#64ffda]" />
+											</div>
+											<div>
+												<div class="text-white">{{ location.manager }}</div>
+											</div>
 										</div>
 									</div>
 
 									<div class="flex items-start">
-										<div class="bg-[#0a192f] p-2 rounded-lg mr-3">
-											<Icon name="mdi:account-school" class="w-5 h-5 text-[#64ffda]" />
-										</div>
-										<div>
-											<div class="text-sm text-[#8892b0] mb-1">Ўқитувчи</div>
-											<div class="text-white">{{ location.head_teacher }}</div>
+										<div class="flex items-center">
+											<div class="bg-[#0a192f] p-2 rounded-lg mr-3">
+												<Icon name="mdi:account-school" class="w-5 h-5 text-[#64ffda]" />
+											</div>
+											<div>
+												<div class="text-white">{{ location.head_teacher }}</div>
+											</div>
 										</div>
 									</div>
 								</div>
@@ -163,22 +165,24 @@ const privateLocationsGridClass = computed(() => getGridClass(privateLocations.v
 
 								<div class="space-y-4 mb-6">
 									<div class="flex items-start">
-										<div class="bg-[#0a192f] p-2 rounded-lg mr-3">
-											<Icon name="mdi:account-tie" class="w-5 h-5 text-[#64ffda]" />
-										</div>
-										<div>
-											<div class="text-sm text-[#8892b0] mb-1">Раҳбар</div>
-											<div class="text-white">{{ location.manager }}</div>
+										<div class="flex items-center">
+											<div class="bg-[#0a192f] p-2 rounded-lg mr-3">
+												<Icon name="mdi:account-tie" class="w-5 h-5 text-[#64ffda]" />
+											</div>
+											<div class="flex items-center">
+												<div class="text-white">{{ location.manager }}</div>
+											</div>
 										</div>
 									</div>
 
 									<div class="flex items-start">
-										<div class="bg-[#0a192f] p-2 rounded-lg mr-3">
-											<Icon name="mdi:account-school" class="w-5 h-5 text-[#64ffda]" />
-										</div>
-										<div>
-											<div class="text-sm text-[#8892b0] mb-1">Ўқитувчи</div>
-											<div class="text-white">{{ location.head_teacher }}</div>
+										<div class="flex justify-center items-center">
+											<div class="bg-[#0a192f] p-2 rounded-lg mr-3">
+												<Icon name="mdi:account-school" class="w-5 h-5 text-[#64ffda]" />
+											</div>
+											<div>
+												<div class="text-white">{{ location.head_teacher }}</div>
+											</div>
 										</div>
 									</div>
 								</div>

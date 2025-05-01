@@ -1,6 +1,6 @@
-<script setup lang="ts">
-import { useRoute } from 'vue-router';
-import { getBuildingById } from '~/composables/useBuildings';
+<script lang="ts" setup>
+import {useRoute} from 'vue-router';
+import {getBuildingById} from '~/composables/useBuildings';
 import type {BuildingInfo} from "~/types/building";
 
 const route = useRoute();
@@ -13,11 +13,12 @@ const building: BuildingInfo | undefined = getBuildingById(id);
 	<div class="min-h-screen bg-[#020c1b] text-[#ccd6f6]">
 		<div class="container mx-auto px-4 py-12">
 			<NuxtLink
-				to="/"
 				class="inline-flex items-center text-[#728098] hover:text-[#64ffda] mb-8 transition-all duration-300 group"
+				to="/"
 			>
-				<div class="flex justify-center items-center bg-[#112240] p-2 rounded-full mr-3 group-hover:bg-[#233554] transition-all duration-300">
-					<Icon name="mdi:arrow-left" class="w-5 h-5" />
+				<div
+					class="flex justify-center items-center bg-[#112240] p-2 rounded-full mr-3 group-hover:bg-[#233554] transition-all duration-300">
+					<Icon class="w-5 h-5" name="mdi:arrow-left"/>
 				</div>
 				<span class="font-medium">Орқага қайтиш</span>
 			</NuxtLink>
@@ -28,7 +29,7 @@ const building: BuildingInfo | undefined = getBuildingById(id);
 			>
 				<div class="relative">
 
-<!--					Carousel-->
+					<!--					Carousel-->
 
 					<div>
 						<ImageCarousel
@@ -48,24 +49,24 @@ const building: BuildingInfo | undefined = getBuildingById(id);
 					<div>
 						<div class="grid gap-6">
 							<div class="flex items-start">
-								<Icon name="mdi:map-marker" class="w-6 h-6 mr-2 mt-1 flex-shrink-0 text-[#52e0c4]" />
+								<Icon class="w-6 h-6 mr-2 mt-1 flex-shrink-0 text-[#52e0c4]" name="mdi:map-marker"/>
 								<span class="text-lg text-[#ccd6f6]">{{ building.description }}</span>
 							</div>
 
 							<NuxtLink
 								:to="building.location_google"
-								target="_blank"
 								class="inline-flex items-center text-[#52e0c4] hover:text-[#b0c7e6] transition-colors"
+								target="_blank"
 							>
-								<Icon name="grommet-icons:map" class="w-6 h-6 mr-2" />
+								<Icon class="w-6 h-6 mr-2" name="grommet-icons:map"/>
 								<span class="text-lg">Google харитада кўриш</span>
 							</NuxtLink>
 							<NuxtLink
 								:to="building.location_yandex"
-								target="_blank"
 								class="inline-flex items-center text-[#52e0c4] hover:text-[#b0c7e6] transition-colors"
+								target="_blank"
 							>
-								<Icon name="grommet-icons:map" class="w-6 h-6 mr-2" />
+								<Icon class="w-6 h-6 mr-2" name="grommet-icons:map"/>
 								<span class="text-lg">Yandex харитада кўриш</span>
 							</NuxtLink>
 						</div>
