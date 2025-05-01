@@ -51,7 +51,7 @@ const stateLocations = computed(() =>
 
 					<!-- Государственные -->
 					<div v-if="stateLocations.length">
-						<h2 class="text-2xl font-bold mb-4 text-[#52e0c4]">Давлат локациялар</h2>
+						<h2 class="text-2xl font-bold mb-4 text-[#52e0c4]">Давлат тиббиёт муассасалари</h2>
 						<div class="grid gap-8">
 							<div
 								v-for="location in stateLocations"
@@ -93,7 +93,7 @@ const stateLocations = computed(() =>
 					</div>
 					<!-- Частные -->
 					<div v-if="privateLocations.length">
-						<h2 class="text-2xl font-bold mb-4 text-[#52e0c4]">Хусусий локациялар</h2>
+						<h2 class="text-2xl font-bold mb-4 text-[#52e0c4]">Хусусий тиббиёт муассасалар</h2>
 						<div class="grid gap-8">
 							<div
 								v-for="location in privateLocations"
