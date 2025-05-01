@@ -177,7 +177,7 @@ const privateLocationsGridClass = computed(() => getGridClass(privateLocations.v
 											<Icon name="mdi:account-school" class="w-5 h-5 text-[#64ffda]" />
 										</div>
 										<div>
-											<div class="text-sm text-[#8892b0] mb-1">Ўқи��увчи</div>
+											<div class="text-sm text-[#8892b0] mb-1">Ўқитувчи</div>
 											<div class="text-white">{{ location.head_teacher }}</div>
 										</div>
 									</div>
