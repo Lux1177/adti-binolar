@@ -14,11 +14,12 @@ const building: BuildingInfo | undefined = getBuildingById(id);
 		<div class="container mx-auto px-4 py-12">
 			<NuxtLink
 				to="/"
-				class="inline-flex items-center text-[#728098] hover:text-[#b0c7e6]
-				mb-8 transition-colors duration-200"
+				class="inline-flex items-center text-[#728098] hover:text-[#64ffda] mb-8 transition-all duration-300 group"
 			>
-				<Icon name="mdi:arrow-left" class="w-5 h-5 mr-2" />
-				Орқага қайтиш
+				<div class="flex justify-center items-center bg-[#112240] p-2 rounded-full mr-3 group-hover:bg-[#233554] transition-all duration-300">
+					<Icon name="mdi:arrow-left" class="w-5 h-5" />
+				</div>
+				<span class="font-medium">Орқага қайтиш</span>
 			</NuxtLink>
 
 			<div
@@ -29,16 +30,16 @@ const building: BuildingInfo | undefined = getBuildingById(id);
 
 <!--					Carousel-->
 
-					<div class="relative">
+					<div>
 						<ImageCarousel
 							:images="building.images"
 							class="mb-8"
-							height="500px"
+							height="650px"
 						/>
 					</div>
 
 
-					<div class="absolute top-[70%] p-6">
+					<div class="px-8">
 						<h1 class="text-4xl font-bold text-white mb-2 drop-shadow-lg">{{ building.name }}</h1>
 					</div>
 				</div>

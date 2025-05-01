@@ -18,7 +18,7 @@ const props = withDefaults(defineProps<Props>(), {
 	interval: 3000,
 	showControls: true,
 	showIndicators: true,
-	showThumbnails: true,
+	showThumbnails: false,
 	pauseAutoplayOnHover: true,
 	showAutoplayIndicator: false,
 	height: 'auto'
@@ -93,54 +93,132 @@ watch(() => props.images, resetAutoplay, { deep: true })
 
 <template>
 	<div class="relative w-full" @mouseenter="pauseAutoplay" @mouseleave="resumeAutoplay">
-		<div class="relative overflow-hidden" :style="{ height: height }">
+		<div class="relative overflow-hidden rounded-lg" :style="{ height }">
+			<!-- Slides -->
 			<div
 				class="flex transition-transform duration-500 ease-in-out h-full"
-				:style="{ transform: `translateX(-${currentIndex * 100}%)` }">
+				:style="{ transform: `translateX(-${currentIndex * 100}%)` }"
+			>
 				<div v-for="(image, index) in images" :key="index" class="min-w-full h-full flex-shrink-0">
-					<img :src="image" :alt="`Slide ${index + 1}`" class="w-full h-full object-cover" @load="handleImageLoad(index)" />
+					<img
+						:src="image"
+						:alt="`Slide ${index + 1}`"
+						class="w-full h-full object-cover"
+						@load="handleImageLoad(index)"
+					/>
 				</div>
 			</div>
 
 			<!-- Navigation arrows -->
-			<button v-if="showControls" @click="prevSlide" class="absolute left-2 top-1/2 -translate-y-1/2">
-				◀
+			<button
+				v-if="showControls"
+				@click="prevSlide"
+				class="absolute left-4 top-1/2 -translate-y-1/2 bg-white/30 backdrop-blur-sm hover:bg-white/50 rounded-full p-2 transition-all duration-200 focus:outline-none"
+				aria-label="Previous slide"
+			>
+				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 text-gray-800">
+					<path d="m15 18-6-6 6-6"></path>
+				</svg>
 			</button>
-			<button v-if="showControls" @click="nextSlide" class="absolute right-2 top-1/2 -translate-y-1/2">
-				▶
+
+			<button
+				v-if="showControls"
+				@click="nextSlide"
+				class="absolute right-4 top-1/2 -translate-y-1/2 bg-white/30 backdrop-blur-sm hover:bg-white/50 rounded-full p-2 transition-all duration-200 focus:outline-none"
+				aria-label="Next slide"
+			>
+				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 text-gray-800">
+					<path d="m9 18 6-6-6-6"></path>
+				</svg>
 			</button>
 
 			<!-- Auto-play indicator -->
-			<div v-if="autoplay && showAutoplayIndicator" class="absolute top-2 right-2 bg-white p-1 rounded">
+			<div
+				v-if="autoplay && showAutoplayIndicator"
+				class="absolute top-3 right-3 bg-white/70 backdrop-blur-sm text-xs font-medium px-2 py-1 rounded-full"
+			>
 				{{ Math.round(remainingTime / 1000) }}s
+			</div>
+
+			<!-- Dot indicators positioned at the bottom of the image in a horizontal line -->
+			<div
+				v-if="showIndicators"
+				class="absolute bottom-6 left-0 right-0 flex justify-center items-center"
+			>
+				<div class="px-3 py-1.5 rounded-full bg-black/15 backdrop-blur-sm inline-flex items-center">
+					<div class="flex gap-2 items-center">
+						<button
+							v-for="(_, index) in images"
+							:key="index"
+							@click="goToSlide(index)"
+							class="dot-indicator transition-all duration-300 ease-out rounded-full focus:outline-none"
+							:class="index === currentIndex ? 'active-dot bg-white' : 'bg-white/50 hover:bg-white/70'"
+							:aria-label="`Go to slide ${index + 1}`"
+							:aria-current="index === currentIndex ? 'true' : 'false'"
+						></button>
+					</div>
+				</div>
 			</div>
 		</div>
 
-		<!-- Thumbnails -->
-		<div v-if="showThumbnails" class="flex justify-center mt-2 space-x-2">
+		<!-- Thumbnails (kept but hidden by default) -->
+		<div
+			v-if="showThumbnails"
+			class="flex justify-center mt-4 space-x-2 overflow-x-auto pb-2"
+		>
 			<button
 				v-for="(image, index) in images"
 				:key="index"
 				@click="goToSlide(index)"
-				class="rounded overflow-hidden w-16 h-10 transition-transform duration-200"
-				:class="{ 'scale-110 ring-2 ring-blue-500': index === currentIndex }"
+				class="rounded-md overflow-hidden w-16 h-10 transition-all duration-200 focus:outline-none"
+				:class="{ 'ring-2 ring-gray-800 scale-105': index === currentIndex }"
+				:aria-label="`Go to slide ${index + 1}`"
+				:aria-current="index === currentIndex ? 'true' : 'false'"
 			>
-				<img :src="image" class="w-full h-full object-cover" />
+				<img :src="image" class="w-full h-full object-cover" alt="" />
 			</button>
 		</div>
-
-
 	</div>
 </template>
 
 <style scoped>
 button {
-	transition: transform 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+}
+
+button:focus-visible {
+	outline: 2px solid #4f46e5;
+	outline-offset: 2px;
 }
 
 img {
 	box-shadow: none !important;
 	background: transparent !important;
 	border: none !important;
+}
+
+.dot-indicator {
+	width: 8px;
+	height: 8px;
+	transform-origin: center;
+}
+
+.active-dot {
+	width: 12px;
+	height: 12px;
+	transform: scale(1);
+	animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+	0% {
+		transform: scale(1);
+	}
+	50% {
+		transform: scale(1.2);
+	}
+	100% {
+		transform: scale(1);
+	}
 }
 </style>
