@@ -1,4 +1,5 @@
 <template>
+	<div class="navbar-bg h-[80px] w-full bg-yellow-400 bg-repeat-x"></div>
 		<div class="container mx-auto px-4">
 			<div class="flex items-center justify-between py-3">
 				<NuxtLink to="https://my.agmi.uz/" class="flex items-center hover:scale-110 transition ease-in">
@@ -73,4 +74,10 @@ nav {
 nav::-webkit-scrollbar {
 	display: none;
 }
+
+.navbar-bg {
+	background-image: url("/navbarbg.jpg");
+	background-size: contain;
+}
+
 </style>
