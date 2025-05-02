@@ -640,8 +640,7 @@ export const faculties: Building[] = [
 		id: 26,
 		name: "Неврология кафедраси",
 		images: [
-				"https://adti.uz/wp-content/uploads/2024/08/1V9A4383.jpg",
-				"https://adti.uz/wp-content/uploads/2024/08/1V9A4383.jpg",
+				"/2-bino.jpg",
 		],
 		locations: [
 			{
@@ -723,5 +722,360 @@ export const faculties: Building[] = [
 				location_yandex: 'https://yandex.uz/maps/-/CHVGr8~m'
 			},
 		],
-	}
+	},
+	{
+		id: 30,
+		name: "Травматология, ортопедия ва нейрохирургия",
+		images: [
+			"/kafedralar/tty.jpg",
+			"/kafedralar/ashtb.jpg",
+			"/kafedralar/mubinaxon-shifo.jpg",
+		],
+		locations: [
+			{
+				id: 1,
+				type: "state",
+				name: "Пушкин кўчаси 58, Республика шошилинч тез тиббий ёрдам илмий маркази Андижон филиали",
+				manager: "Мудири Артикова С.Г. - (99) 316-71-00",
+				head_teacher: "Завуч Юнусова Зебо - (93) 427-42-22",
+				location_google: "https://maps.app.goo.gl/3TDmTBoPgDsg24UB6",
+				location_yandex: "https://yandex.uz/maps/-/CHrEq66E"
+			},
+			{
+				id: 2,
+				type: "state",
+				name: "Ю.Отабеков кўчаси 1-уй, Андижон шаҳар тиббиёт бирлашмаси",
+				manager: "Мудири Артикова С.Г. - (99) 316-71-00",
+				head_teacher: "Завуч Юнусова Зебо - (93) 427-42-22",
+				location_google: "https://maps.app.goo.gl/xNyzzGZpX3zahG7KA",
+				location_yandex: "https://yandex.uz/maps/-/CHrEq-93"
+			},
+			{
+				id: 3,
+				type: "private",
+				name: "Лойихавий 74, Мубинахон шифо хусусий шифохонаси",
+				manager: "Мудири Артикова С.Г. - (99) 316-71-00",
+				head_teacher: "Завуч Юнусова Зебо - (93) 427-42-22",
+				location_google: "https://maps.app.goo.gl/Kkc25ZTb9ZFvP1QD7",
+				location_yandex: "https://yandex.uz/maps/-/CHrEN69m"
+			},
+		],
+	},
+	{
+		id: 31,
+		name: "Умумий жаррохлик ва трансплантология",
+		images: [
+			"/2-bino.jpg",
+			"/kafedralar/ashtb.jpg",
+			"/kafedralar/tybsh.jpg",
+		],
+		locations: [
+			{
+				id: 1,
+				type: "state",
+				name: "Б.Шох кўчаси 8 уй, АДТИ клиникаси худуди",
+				manager: "Мудири Артикова С.Г. - (99) 316-71-00",
+				head_teacher: "Завуч Юнусова Зебо - (93) 427-42-22",
+				location_google: "https://maps.app.goo.gl/mtTrdDEHd1BcqPc19",
+				location_yandex: "https://yandex.uz/maps/-/CHVnjPyw"
+			},
+			{
+				id: 2,
+				type: "state",
+				name: "Ю.Атабеков кўчаси, 74",
+				manager: "Мудири Артикова С.Г. - (99) 316-71-00",
+				head_teacher: "Завуч Юнусова Зебо - (93) 427-42-22",
+				location_google: "https://maps.app.goo.gl/xNyzzGZpX3zahG7KA",
+				location_yandex: "https://yandex.uz/maps/-/CHrEq-93"
+			},
+			{
+				id: 3,
+				type: "state",
+				name: "Андижон ш., Нихол кўчаси, 48, М.Юсуф майдони ёнида",
+				manager: "Мудири Артикова С.Г. - (99) 316-71-00",
+				head_teacher: "Завуч Юнусова Зебо - (93) 427-42-22",
+				location_google: "https://maps.app.goo.gl/eKDGwDWG3Pj7M3zC8",
+				location_yandex: "https://yandex.uz/maps/-/CHrEVTLT"
+			},
+		],
+	},
+	{
+		id: 32,
+		name: "Ички касалликлар пропедевтикаси",
+		images: [
+			"/2-bino.jpg",
+		],
+		locations: [
+			{
+				id: 1,
+				type: "state",
+				name: "Б.Шох кўчаси 8 уй, АДТИ клиникаси худуди",
+				manager: "Мудири Артикова С.Г. - (99) 316-71-00",
+				head_teacher: "Завуч Юнусова Зебо - (93) 427-42-22",
+				location_google: "https://maps.app.goo.gl/mtTrdDEHd1BcqPc19",
+				location_yandex: "https://yandex.uz/maps/-/CHVnjPyw"
+			},
+		],
+	},
+	{
+		id: 33,
+		name: "Психиатрия, наркология, тиббий психология ва психотерапия курси",
+		images: [
+			"/kafedralar/avpd.jpg",
+		],
+		locations: [
+			{
+				id: 1,
+				type: "state",
+				name: "Андижон шаҳар, Ю.Атабеков кўчаси, 3-уй",
+				manager: "Мудири Артикова С.Г. - (99) 316-71-00",
+				head_teacher: "Завуч Юнусова Зебо - (93) 427-42-22",
+				location_google: "https://maps.app.goo.gl/HddUYeoRBfhrqtgj6",
+				location_yandex: "https://yandex.uz/maps/-/CHrIEKMT"
+			},
+		],
+	},
+	{
+		id: 34,
+		name: "Даволаш факултети учун Педиатрия кафедраси",
+		images: [
+			"",
+			"",
+		],
+		locations: [
+			{
+				id: 1,
+				type: "state",
+				name: "Андижон шахар, Университет кўчаси 1 уй, Андижон шахар болалар шифохонаси",
+				manager: "Мудири Артикова С.Г. - (99) 316-71-00",
+				head_teacher: "Завуч Юнусова Зебо - (93) 427-42-22",
+				location_google: "https://maps.app.goo.gl/FPMDiDUNJ3iJjksn6",
+				location_yandex: ""
+			},
+		],
+	},
+	{
+		id: 35,
+		name: "ОШТ",
+		images: [
+			"",
+			"",
+		],
+		locations: [
+			{
+				id: 1,
+				type: "state",
+				name: "Б.Шох кўчаси 8-уй, АДТИ клиникаси худуди",
+				manager: "Мудири Артикова С.Г. - (99) 316-71-00",
+				head_teacher: "Завуч Юнусова Зебо - (93) 427-42-22",
+				location_google: "https://maps.google.com/maps?q=40.808012,72.328795&ll=40.808012,72.328795&z=16",
+				location_yandex: ""
+			},
+			{
+				id: 2,
+				type: "private",
+				name: "Бобур шох кучаси 3 г-уй",
+				manager: "Мудири Артикова С.Г. - (99) 316-71-00",
+				head_teacher: "Завуч Юнусова Зебо - (93) 427-42-22",
+				location_google: "https://maps.google.com/maps?q=40.749228,72.360392&ll=40.749228,72.360392&z=16",
+				location_yandex: ""
+			},
+			{
+				id: 3,
+				type: "state",
+				name: "Каландаров кўчасиб 709-уй",
+				manager: "Мудири Артикова С.Г. - (99) 316-71-00",
+				head_teacher: "Завуч Юнусова Зебо - (93) 427-42-22",
+				location_google: "https://maps.google.com/maps?q=40.810819,72.323823&ll=40.810819,72.323823&z=16",
+				location_yandex: ""
+			},
+			{
+				id: 4,
+				type: "private",
+				name: "Бобуршох кўчаси 37 уй",
+				manager: "Мудири Артикова С.Г. - (99) 316-71-00",
+				head_teacher: "Завуч Юнусова Зебо - (93) 427-42-22",
+				location_google: "https://maps.google.com/maps?q=40.775865,72.334274&ll=40.775865,72.334274&z=16",
+				location_yandex: ""
+			},
+			{
+				id: 5,
+				type: "private",
+				name: "Ю.Отабеков кўча 11 уй",
+				manager: "Мудири Артикова С.Г. - (99) 316-71-00",
+				head_teacher: "Завуч Юнусова Зебо - (93) 427-42-22",
+				location_google: "https://maps.google.com/maps?q=40.810148,72.328804&ll=40.810148,72.328804&z=16",
+				location_yandex: ""
+			},
+			{
+				id: 6,
+				type: "state",
+				name: "Ю.Отабеков кўчаси 1 уй",
+				manager: "Мудири Артикова С.Г. - (99) 316-71-00",
+				head_teacher: "Завуч Юнусова Зебо - (93) 427-42-22",
+				location_google: "https://maps.app.goo.gl/wRwe4oJZTMDD8gsf6",
+				location_yandex: ""
+			},
+			{
+				id: 7,
+				type: "private",
+				name: "Андижон шахар Кушарак 12Б Мусаффо- лимфа",
+				manager: "Мудири Артикова С.Г. - (99) 316-71-00",
+				head_teacher: "Завуч Юнусова Зебо - (93) 427-42-22",
+				location_google: "https://maps.google.com/maps?q=40.810251,72.335526&ll=40.810251,72.335526&z=16",
+				location_yandex: ""
+			},
+		],
+	},
+	{
+		id: 36,
+		name: "Жаррохлик касалликлари",
+		images: [
+			"",
+			"",
+		],
+		locations: [
+			{
+				id: 1,
+				type: "state",
+				name: "Ю. Отабеков кўчаси 1, Андижон шахар тиббиёт бирлашмаси",
+				manager: "Мудири Артикова С.Г. - (99) 316-71-00",
+				head_teacher: "Завуч Юнусова Зебо - (93) 427-42-22",
+				location_google: "https://maps.app.goo.gl/xNyzzGZpX3zahG7KA",
+				location_yandex: ""
+			},
+			{
+				id: 2,
+				type: "state",
+				name: "Андижон шаҳар А.Темур кўча, Фаномед хусусий клиникаси",
+				manager: "Мудири Артикова С.Г. - (99) 316-71-00",
+				head_teacher: "Завуч Юнусова Зебо - (93) 427-42-22",
+				location_google: "https:/maps.app.goo.gl/CPGVPYknoDNbQreH7?G_ST=AZ",
+				location_yandex: ""
+			},
+		],
+	},
+	{
+		id: 37,
+		name: "Анестезиология-реаниматология ва тез тиббий ёрдам",
+		images: [
+			"",
+			"",
+		],
+		locations: [
+			{
+				id: 1,
+				type: "state",
+				name: "Ю.Отабеков кўчаси АДТИ клиникаси 2000 ўринли ўқув биноси",
+				manager: "Мудири Артикова С.Г. - (99) 316-71-00",
+				head_teacher: "Завуч Юнусова Зебо - (93) 427-42-22",
+				location_google: "",
+				location_yandex: "https://yandex.uz/maps/10329/andijan/?ll=72.328996%2C40.811446&mode=whatshere&tab=inside&whatshere%5Bpoint%5D=72.328987%2C40.811425&whatshere%5Bzoom%5D=17&z=16"
+			},
+			{
+				id: 2,
+				type: "state",
+				name: "А.Навоий шох кўчаси 58. РШТЁИМ АФ",
+				manager: "Мудири Артикова С.Г. - (99) 316-71-00",
+				head_teacher: "Завуч Юнусова Зебо - (93) 427-42-22",
+				location_google: "https://maps.app.goo.gl/3TDmTBoPgDsg24UB6",
+				location_yandex: ""
+			},
+			{
+				id: 3,
+				type: "state",
+				name: "Фурқат кўчаси,  5 уй. Андижон вилоят болалар кўп тармоқли тиббиёт маркази",
+				manager: "Мудири Артикова С.Г. - (99) 316-71-00",
+				head_teacher: "Завуч Юнусова Зебо - (93) 427-42-22",
+				location_google: "https://maps.app.goo.gl/PmddTEsfbK6fdK2D9",
+				location_yandex: ""
+			},
+		],
+	},
+	{
+		id: 38,
+		name: "Даволаш факультети учун болалар жарроҳлиги",
+		images: [
+			"",
+			"",
+		],
+		locations: [
+			{
+				id: 1,
+				type: "state",
+				name: "Фурқат кўчаси,  5 уй. Андижон вилоят болалар кўп тармоқли тиббиёт маркази",
+				manager: "Мудири Артикова С.Г. - (99) 316-71-00",
+				head_teacher: "Завуч Юнусова Зебо - (93) 427-42-22",
+				location_google: "https://maps.app.goo.gl/PmddTEsfbK6fdK2D9",
+				location_yandex: ""
+			},
+		],
+	},
+	{
+		id: 40,
+		name: "Госпитал терапия",
+		images: [
+			"",
+			"",
+		],
+		locations: [
+			{
+				id: 1,
+				type: "state",
+				name: "Б.Шох кўчаси 8-уй, АДТИ клиникаси худуди",
+				manager: "Мудири Артикова С.Г. - (99) 316-71-00",
+				head_teacher: "Завуч Юнусова Зебо - (93) 427-42-22",
+				location_google: "https://maps.google.com/maps?q=40.808012,72.328795&ll=40.808012,72.328795&z=16",
+				location_yandex: ""
+			},
+			{
+				id: 2,
+				type: "state",
+				name: "Майбоғча кўчаси 59,  Академик Ё.Х.Тўракулов номидаги Республика ихтисослаштирилган эндокринология илмий-амалий тиббиёт маркази Андижон филиали",
+				manager: "Мудири Артикова С.Г. - (99) 316-71-00",
+				head_teacher: "Завуч Юнусова Зебо - (93) 427-42-22",
+				location_google: "",
+				location_yandex: "https://yandex.ru/navi/org/14137679961?si=9dftndzag9p4mn8u23ax3kphbg"
+			},
+			{
+				id: 3,
+				type: "state",
+				name: "Ахмад дониш 6. Андижон вилояти кўп тармоқли тиббиёт маркази.",
+				manager: "Мудири Артикова С.Г. - (99) 316-71-00",
+				head_teacher: "Завуч Юнусова Зебо - (93) 427-42-22",
+				location_google: "https://maps.google.com/maps?q=40.807912,72.323074&ll=40.807912,72.323074&z=16",
+				location_yandex: ""
+			},
+			{
+				id: 4,
+				type: "state",
+				name: "Навоий шох кўчаси  124 уй",
+				manager: "Мудири Артикова С.Г. - (99) 316-71-00",
+				head_teacher: "Завуч Юнусова Зебо - (93) 427-42-22",
+				location_google: "",
+				location_yandex: "https://yandex.uz/maps/org/174928440433/?display-text=%D0%9B%D0%B8%D1%86%D0%B5%D0%B8&ll=72." +
+						"484323%2C40.775260&mode=search&sll=72.352487%2C40.775220&text=category_id%3A%28184106238%29&z=11"
+			},
+		],
+	},
+	{
+		id: 41,
+		name: "2-акушерлик ва гинекология  кафедраси",
+		images: [
+			"",
+			"",
+		],
+		locations: [
+			{
+				id: 1,
+				type: "state",
+				name: "Чоргузар кўча 3 уй  Кўтанарик МФЙ Андижон шахар 2-туғрук комплекси",
+				manager: "Мудири Артикова С.Г. - (99) 316-71-00",
+				head_teacher: "Завуч Юнусова Зебо - (93) 427-42-22",
+				location_google: "https://maps.app.goo.glQ9H2+2RC",
+				location_yandex: ""
+			},
+
+		],
+	},
 ]
