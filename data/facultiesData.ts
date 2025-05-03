@@ -5,9 +5,10 @@ export const faculties: Building[] = [
 		id: 1,
 		name: "Офтальмология кафедраси",
 		images: [
+			"/kafedralar/5-op.jpg",
 			"/Furqat.jpg",
-			"/Furqat.jpg",
-			"/Furqat.jpg"
+			"/kafedralar/vizion-optima.jpg",
+			"/kafedralar/lens-optima.jpg",
 		],
 		locations: [
 			{
@@ -16,26 +17,26 @@ export const faculties: Building[] = [
 				name: "Vizion optima",
 				manager: "Мудири Икромов А.Ф. - (90) 269-01-00",
 				head_teacher: "Завуч Умарова Б. - (91) 477-30-65",
-				location_google: "https://maps.app.goo.gl/zDdiuVu8roHggh8y6",
-				location_yandex: "https://yandex.uz/maps/-/CHVFr6zq"
+				location_google: "https://maps.app.goo.gl/NqzJQwsCyasMMGBn6",
+				location_yandex: "https://yandex.uz/maps/-/CHrY5H5s"
 			},
 			{
 				id: 2,
-				type: "state",
+				type: "private",
 				name: "Lens optima (темир йўл вокзали) 8-OP",
 				manager: "Мудири Икромов А.Ф. - (90) 269-01-00",
 				head_teacher: "Завуч Умарова Б. - (91) 477-30-65",
-				location_google: "https://maps.app.goo.gl/zDdiuVu8roHggh8y6",
-				location_yandex: "https://yandex.uz/maps/-/CHVFr6zq"
+				location_google: "https://maps.app.goo.gl/BiEBBHAonNvweeBD9",
+				location_yandex: "https://yandex.uz/maps/-/CHrYBJJ4"
 			},
 			{
 				id: 3,
-				type: "private",
+				type: "state",
 				name: "5-OP",
 				manager: "Мудири Икромов А.Ф. - (90) 269-01-00",
 				head_teacher: "Завуч Умарова Б. - (91) 477-30-65",
-				location_google: "https://maps.app.goo.gl/zDdiuVu8roHggh8y6",
-				location_yandex: "https://yandex.uz/maps/-/CHVFr6zq"
+				location_google: "https://maps.app.goo.gl/rJ4vGsbhreXKvVTb9",
+				location_yandex: "https://yandex.uz/maps/-/CHrY5F5m"
 			},
 			{
 				id: 4,
@@ -43,8 +44,8 @@ export const faculties: Building[] = [
 				name: "VBKTTM (furqat)",
 				manager: "Мудири Икромов А.Ф. - (90) 269-01-00",
 				head_teacher: "Завуч Умарова Б. - (91) 477-30-65",
-				location_google: "https://maps.app.goo.gl/zDdiuVu8roHggh8y6",
-				location_yandex: "https://yandex.uz/maps/-/CHVFr6zq"
+				location_google: "https://maps.app.goo.gl/J2gcVtEZQgEzN3YZ8",
+				location_yandex: "https://yandex.uz/maps/-/CHrY5CNM"
 			}
 		]
 	},
@@ -52,9 +53,7 @@ export const faculties: Building[] = [
 		id: 2,
 		name: "Анатомия ва клиник анатомия кафедраси",
 		images: [
-			"/1-bino.jpg",
-			"/1-bino.jpg",
-			"/1-bino.jpg"
+			"/adti.jpg",
 		],
 		locations: [
 			{
@@ -73,8 +72,6 @@ export const faculties: Building[] = [
 		name: "Юкумли касалликлар кафедраси",
 		images: [
 			"/yuqumli-kasalliklar.jpg",
-			"/yuqumli-kasalliklar.jpg",
-			"/yuqumli-kasalliklar.jpg"
 		],
 		locations: [
 			{
@@ -92,7 +89,7 @@ export const faculties: Building[] = [
 		id: 4,
 		name: "Жаррохлик касалликлари ва фуқаролар мухофазаси кафедраси",
 		images: [
-			"/kafedralar/musaffo-limfa.jpg",
+			"/kafedralar/sanchas.jpg",
 			"/kafedralar/musaffo-limfa.jpg",
 			"/kafedralar/musaffo-limfa.jpg"
 		],
@@ -178,8 +175,6 @@ export const faculties: Building[] = [
 		name: "Госпитал педиатрия кафедраси",
 		images: [
 			"/Furqat.jpg",
-			"/Furqat.jpg",
-			"/Furqat.jpg"
 		],
 		locations: [
 			{
@@ -197,9 +192,8 @@ export const faculties: Building[] = [
 		id: 7,
 		name: "Болалар касалликлари пропедевтикаси ва поликлиник педиатрия кафедраси",
 		images: [
+			"/kafedralar/1-op.jpg",
 			"/Furqat.jpg",
-			"/Furqat.jpg",
-			"/Furqat.jpg"
 		],
 		locations: [
 			{
@@ -208,8 +202,8 @@ export const faculties: Building[] = [
 				name: "1-ОП",
 				manager: "Мудири М.Э. Абдуллаева - (90) 258-10-23",
 				head_teacher: "Завуч Р. Абдулхакова - (97) 446-82-44",
-				location_google: "https://maps.app.goo.gl/M2ZSFc1dFpeUKMUXA",
-				location_yandex: "https://yandex.uz/maps/-/CHVFzTlK"
+				location_google: "https://maps.app.goo.gl/1YCSXQN1ucTCKHSg9",
+				location_yandex: "https://yandex.uz/maps/-/CHrYb4pG"
 			},
 			{
 				id: 2,
@@ -264,26 +258,6 @@ export const faculties: Building[] = [
 	},
 	{
 		id: 10,
-		name: "Превентив тиббиёт асослари кафедраси",
-		images: [
-			"/1-bino.jpg",
-			"/1-bino.jpg",
-			"/1-bino.jpg"
-		],
-		locations: [
-			{
-				id: 1,
-				type: "state",
-				name: "АДТИ 2-ўқув биноси",
-				manager: "Мудири Салиева М.Х. - (91) 612-65-02",
-				head_teacher: "Завуч Хожиахматова Р. - (93) 215-91-61",
-				location_google: "https://maps.app.goo.gl/QiJNzAi17qLrf2DX7",
-				location_yandex: "https://yandex.uz/maps/-/CHVFV45v"
-			}
-		]
-	},
-	{
-		id: 11,
 		name: "Болалар жаррохлиги кафедраси",
 		images: [
 			"/Furqat.jpg",
@@ -303,7 +277,7 @@ export const faculties: Building[] = [
 		]
 	},
 	{
-		id: 12,
+		id: 11,
 		name: "1-Акушерлик ва гинекология кафедраси",
 		images: [
 			"/Perenatal_markaz.jpg",
@@ -332,7 +306,7 @@ export const faculties: Building[] = [
 		]
 	},
 	{
-		id: 13,
+		id: 12,
 		name: "Болалар травматологияси, ортопедияси ва нейрожаррохлик кафедраси",
 		images: [
 			"/kafedralar/sehat.jpg",
@@ -379,7 +353,7 @@ export const faculties: Building[] = [
 		]
 	},
 	{
-		id: 14,
+		id: 13,
 		name: "Педиатрия факультети учун ички касалликлари пропедевтикаси",
 		images: [
 			"/kafedralar/sanchas.jpg",
@@ -404,6 +378,26 @@ export const faculties: Building[] = [
 				head_teacher: "Завуч Юнусова Зебо - (93) 427-42-22",
 				location_google: "https://maps.app.goo.gl/VmUYPURQQuq6rYzS9",
 				location_yandex: "https://yandex.uz/maps/-/CHVJE4N0"
+			}
+		]
+	},
+	{
+		id: 14,
+		name: "Превентив тиббиёт асослари кафедраси",
+		images: [
+			"/1-bino.jpg",
+			"/1-bino.jpg",
+			"/1-bino.jpg"
+		],
+		locations: [
+			{
+				id: 1,
+				type: "state",
+				name: "АДТИ 2-ўқув биноси",
+				manager: "Мудири Салиева М.Х. - (91) 612-65-02",
+				head_teacher: "Завуч Хожиахматова Р. - (93) 215-91-61",
+				location_google: "https://maps.app.goo.gl/QiJNzAi17qLrf2DX7",
+				location_yandex: "https://yandex.uz/maps/-/CHVFV45v"
 			}
 		]
 	},
@@ -668,8 +662,6 @@ export const faculties: Building[] = [
 		name: "Тиббий радиология кафедраси",
 		images: [
 			"/adti.jpg",
-			"/adti.jpg",
-			"/adti.jpg",
 		],
 		locations: [
 			{
@@ -839,8 +831,7 @@ export const faculties: Building[] = [
 		id: 34,
 		name: "Даволаш факултети учун Педиатрия кафедраси",
 		images: [
-			"",
-			"",
+			"/kafedralar/bolalar-shifoxonasi.jpg",
 		],
 		locations: [
 			{
@@ -849,8 +840,8 @@ export const faculties: Building[] = [
 				name: "Андижон шахар, Университет кўчаси 1 уй, Андижон шахар болалар шифохонаси",
 				manager: "Мудири Артикова С.Г. - (99) 316-71-00",
 				head_teacher: "Завуч Юнусова Зебо - (93) 427-42-22",
-				location_google: "https://maps.app.goo.gl/FPMDiDUNJ3iJjksn6",
-				location_yandex: ""
+				location_google: "https://maps.app.goo.gl/t7YJRsaLfvJUaaV79",
+				location_yandex: "https://yandex.uz/maps/-/CHVFzZJd"
 			},
 		],
 	},
@@ -858,8 +849,13 @@ export const faculties: Building[] = [
 		id: 35,
 		name: "ОШТ",
 		images: [
-			"",
-			"",
+			"/2-bino.jpg",
+			"/kafedralar/teri-tanosil.jpg",
+			"/adti.jpg",
+			"/kafedralar/magnus.jpg",
+			"/kafedralar/medlife.jpg",
+			"/kafedralar/endokrin.jpg",
+			"/kafedralar/musaffo-limfa.jpg",
 		],
 		locations: [
 			{
@@ -868,8 +864,8 @@ export const faculties: Building[] = [
 				name: "Б.Шох кўчаси 8-уй, АДТИ клиникаси худуди",
 				manager: "Мудири Артикова С.Г. - (99) 316-71-00",
 				head_teacher: "Завуч Юнусова Зебо - (93) 427-42-22",
-				location_google: "https://maps.google.com/maps?q=40.808012,72.328795&ll=40.808012,72.328795&z=16",
-				location_yandex: ""
+				location_google: "https://maps.app.goo.gl/mtTrdDEHd1BcqPc19",
+				location_yandex: "https://yandex.uz/maps/-/CHVnjPyw"
 			},
 			{
 				id: 2,
@@ -877,8 +873,8 @@ export const faculties: Building[] = [
 				name: "Бобур шох кучаси 3 г-уй",
 				manager: "Мудири Артикова С.Г. - (99) 316-71-00",
 				head_teacher: "Завуч Юнусова Зебо - (93) 427-42-22",
-				location_google: "https://maps.google.com/maps?q=40.749228,72.360392&ll=40.749228,72.360392&z=16",
-				location_yandex: ""
+				location_google: "https://maps.app.goo.gl/dWoSmpthwVtY1DPH9",
+				location_yandex: "https://yandex.uz/maps/-/CHrUfGJZ"
 			},
 			{
 				id: 3,
@@ -887,7 +883,7 @@ export const faculties: Building[] = [
 				manager: "Мудири Артикова С.Г. - (99) 316-71-00",
 				head_teacher: "Завуч Юнусова Зебо - (93) 427-42-22",
 				location_google: "https://maps.google.com/maps?q=40.810819,72.323823&ll=40.810819,72.323823&z=16",
-				location_yandex: ""
+				location_yandex: "https://yandex.uz/maps/-/CHrUfDYN"
 			},
 			{
 				id: 4,
@@ -895,8 +891,8 @@ export const faculties: Building[] = [
 				name: "Бобуршох кўчаси 37 уй",
 				manager: "Мудири Артикова С.Г. - (99) 316-71-00",
 				head_teacher: "Завуч Юнусова Зебо - (93) 427-42-22",
-				location_google: "https://maps.google.com/maps?q=40.775865,72.334274&ll=40.775865,72.334274&z=16",
-				location_yandex: ""
+				location_google: "https://maps.app.goo.gl/1rfbCunKu1omG3zB8",
+				location_yandex: "https://yandex.uz/maps/-/CHrUfP~e"
 			},
 			{
 				id: 5,
@@ -904,8 +900,8 @@ export const faculties: Building[] = [
 				name: "Ю.Отабеков кўча 11 уй",
 				manager: "Мудири Артикова С.Г. - (99) 316-71-00",
 				head_teacher: "Завуч Юнусова Зебо - (93) 427-42-22",
-				location_google: "https://maps.google.com/maps?q=40.810148,72.328804&ll=40.810148,72.328804&z=16",
-				location_yandex: ""
+				location_google: "https://maps.app.goo.gl/2LQ6bb9Kh4u8ZLyS8",
+				location_yandex: "https://yandex.uz/maps/-/CHrUj4OU"
 			},
 			{
 				id: 6,
@@ -914,7 +910,7 @@ export const faculties: Building[] = [
 				manager: "Мудири Артикова С.Г. - (99) 316-71-00",
 				head_teacher: "Завуч Юнусова Зебо - (93) 427-42-22",
 				location_google: "https://maps.app.goo.gl/wRwe4oJZTMDD8gsf6",
-				location_yandex: ""
+				location_yandex: "https://yandex.uz/maps/-/CHVnj4ML"
 			},
 			{
 				id: 7,
@@ -922,8 +918,8 @@ export const faculties: Building[] = [
 				name: "Андижон шахар Кушарак 12Б Мусаффо- лимфа",
 				manager: "Мудири Артикова С.Г. - (99) 316-71-00",
 				head_teacher: "Завуч Юнусова Зебо - (93) 427-42-22",
-				location_google: "https://maps.google.com/maps?q=40.810251,72.335526&ll=40.810251,72.335526&z=16",
-				location_yandex: ""
+				location_google: "https://maps.app.goo.gl/fXqqAdcJqrtidNar9",
+				location_yandex: "https://yandex.uz/maps/-/CHrUj6Ln"
 			},
 		],
 	},
@@ -931,8 +927,8 @@ export const faculties: Building[] = [
 		id: 36,
 		name: "Жаррохлик касалликлари",
 		images: [
-			"",
-			"",
+			"/kafedralar/ashtb.jpg",
+			"/kafedralar/fanomed.jpg",
 		],
 		locations: [
 			{
@@ -942,7 +938,7 @@ export const faculties: Building[] = [
 				manager: "Мудири Артикова С.Г. - (99) 316-71-00",
 				head_teacher: "Завуч Юнусова Зебо - (93) 427-42-22",
 				location_google: "https://maps.app.goo.gl/xNyzzGZpX3zahG7KA",
-				location_yandex: ""
+				location_yandex: "https://yandex.uz/maps/-/CHrEq-93"
 			},
 			{
 				id: 2,
@@ -950,8 +946,8 @@ export const faculties: Building[] = [
 				name: "Андижон шаҳар А.Темур кўча, Фаномед хусусий клиникаси",
 				manager: "Мудири Артикова С.Г. - (99) 316-71-00",
 				head_teacher: "Завуч Юнусова Зебо - (93) 427-42-22",
-				location_google: "https:/maps.app.goo.gl/CPGVPYknoDNbQreH7?G_ST=AZ",
-				location_yandex: ""
+				location_google: "https://maps.app.goo.gl/apZcCPnyYq1e7u4m9",
+				location_yandex: "https://yandex.uz/maps/-/CHrUnViK"
 			},
 		],
 	},
@@ -959,8 +955,9 @@ export const faculties: Building[] = [
 		id: 37,
 		name: "Анестезиология-реаниматология ва тез тиббий ёрдам",
 		images: [
-			"",
-			"",
+			"/2-bino.jpg",
+			"/kafedralar/tty.jpg",
+			"/Furqat.jpg",
 		],
 		locations: [
 			{
@@ -969,8 +966,8 @@ export const faculties: Building[] = [
 				name: "Ю.Отабеков кўчаси АДТИ клиникаси 2000 ўринли ўқув биноси",
 				manager: "Мудири Артикова С.Г. - (99) 316-71-00",
 				head_teacher: "Завуч Юнусова Зебо - (93) 427-42-22",
-				location_google: "",
-				location_yandex: "https://yandex.uz/maps/10329/andijan/?ll=72.328996%2C40.811446&mode=whatshere&tab=inside&whatshere%5Bpoint%5D=72.328987%2C40.811425&whatshere%5Bzoom%5D=17&z=16"
+				location_google: "https://maps.app.goo.gl/mtTrdDEHd1BcqPc19",
+				location_yandex: "https://yandex.uz/maps/-/CHVnjPyw"
 			},
 			{
 				id: 2,
@@ -979,7 +976,7 @@ export const faculties: Building[] = [
 				manager: "Мудири Артикова С.Г. - (99) 316-71-00",
 				head_teacher: "Завуч Юнусова Зебо - (93) 427-42-22",
 				location_google: "https://maps.app.goo.gl/3TDmTBoPgDsg24UB6",
-				location_yandex: ""
+				location_yandex: "https://yandex.uz/maps/-/CHrEq66E"
 			},
 			{
 				id: 3,
@@ -987,8 +984,8 @@ export const faculties: Building[] = [
 				name: "Фурқат кўчаси,  5 уй. Андижон вилоят болалар кўп тармоқли тиббиёт маркази",
 				manager: "Мудири Артикова С.Г. - (99) 316-71-00",
 				head_teacher: "Завуч Юнусова Зебо - (93) 427-42-22",
-				location_google: "https://maps.app.goo.gl/PmddTEsfbK6fdK2D9",
-				location_yandex: ""
+				location_google: "https://maps.app.goo.gl/bbNu8ARejoGR3mkC9",
+				location_yandex: "https://yandex.uz/maps/-/CHVFzTlK"
 			},
 		],
 	},
@@ -996,8 +993,7 @@ export const faculties: Building[] = [
 		id: 38,
 		name: "Даволаш факультети учун болалар жарроҳлиги",
 		images: [
-			"",
-			"",
+			"/Furqat.jpg",
 		],
 		locations: [
 			{
@@ -1006,8 +1002,8 @@ export const faculties: Building[] = [
 				name: "Фурқат кўчаси,  5 уй. Андижон вилоят болалар кўп тармоқли тиббиёт маркази",
 				manager: "Мудири Артикова С.Г. - (99) 316-71-00",
 				head_teacher: "Завуч Юнусова Зебо - (93) 427-42-22",
-				location_google: "https://maps.app.goo.gl/PmddTEsfbK6fdK2D9",
-				location_yandex: ""
+				location_google: "https://maps.app.goo.gl/bbNu8ARejoGR3mkC9",
+				location_yandex: "https://yandex.uz/maps/-/CHVFzTlK"
 			},
 		],
 	},
@@ -1015,8 +1011,10 @@ export const faculties: Building[] = [
 		id: 40,
 		name: "Госпитал терапия",
 		images: [
-			"",
-			"",
+			"/2-bino.jpg",
+			"/kafedralar/ilmiy-endokrin.jpg",
+			"/kafedralar/sanchas.jpg",
+			"/kafedralar/akademik-litsey.jpg",
 		],
 		locations: [
 			{
@@ -1025,8 +1023,8 @@ export const faculties: Building[] = [
 				name: "Б.Шох кўчаси 8-уй, АДТИ клиникаси худуди",
 				manager: "Мудири Артикова С.Г. - (99) 316-71-00",
 				head_teacher: "Завуч Юнусова Зебо - (93) 427-42-22",
-				location_google: "https://maps.google.com/maps?q=40.808012,72.328795&ll=40.808012,72.328795&z=16",
-				location_yandex: ""
+				location_google: "https://maps.app.goo.gl/mtTrdDEHd1BcqPc19",
+				location_yandex: "https://yandex.uz/maps/-/CHVnjPyw"
 			},
 			{
 				id: 2,
@@ -1034,8 +1032,8 @@ export const faculties: Building[] = [
 				name: "Майбоғча кўчаси 59,  Академик Ё.Х.Тўракулов номидаги Республика ихтисослаштирилган эндокринология илмий-амалий тиббиёт маркази Андижон филиали",
 				manager: "Мудири Артикова С.Г. - (99) 316-71-00",
 				head_teacher: "Завуч Юнусова Зебо - (93) 427-42-22",
-				location_google: "",
-				location_yandex: "https://yandex.ru/navi/org/14137679961?si=9dftndzag9p4mn8u23ax3kphbg"
+				location_google: "https://maps.app.goo.gl/BWVTEuKU7QSTkENK7",
+				location_yandex: "https://yandex.uz/navi/-/CHrUn-Nb"
 			},
 			{
 				id: 3,
@@ -1043,8 +1041,8 @@ export const faculties: Building[] = [
 				name: "Ахмад дониш 6. Андижон вилояти кўп тармоқли тиббиёт маркази.",
 				manager: "Мудири Артикова С.Г. - (99) 316-71-00",
 				head_teacher: "Завуч Юнусова Зебо - (93) 427-42-22",
-				location_google: "https://maps.google.com/maps?q=40.807912,72.323074&ll=40.807912,72.323074&z=16",
-				location_yandex: ""
+				location_google: "https://maps.app.goo.gl/VmUYPURQQuq6rYzS9",
+				location_yandex: "https://yandex.uz/maps/-/CHVJE4N0"
 			},
 			{
 				id: 4,
@@ -1052,9 +1050,8 @@ export const faculties: Building[] = [
 				name: "Навоий шох кўчаси  124 уй",
 				manager: "Мудири Артикова С.Г. - (99) 316-71-00",
 				head_teacher: "Завуч Юнусова Зебо - (93) 427-42-22",
-				location_google: "",
-				location_yandex: "https://yandex.uz/maps/org/174928440433/?display-text=%D0%9B%D0%B8%D1%86%D0%B5%D0%B8&ll=72." +
-						"484323%2C40.775260&mode=search&sll=72.352487%2C40.775220&text=category_id%3A%28184106238%29&z=11"
+				location_google: "https://maps.app.goo.gl/5anaNadRNWJDUvvQ9",
+				location_yandex: "https://yandex.uz/maps/-/CHrUvQLf"
 			},
 		],
 	},
@@ -1062,8 +1059,7 @@ export const faculties: Building[] = [
 		id: 41,
 		name: "2-акушерлик ва гинекология  кафедраси",
 		images: [
-			"",
-			"",
+			"/kafedralar/2-tk.jpg",
 		],
 		locations: [
 			{
@@ -1072,10 +1068,153 @@ export const faculties: Building[] = [
 				name: "Чоргузар кўча 3 уй  Кўтанарик МФЙ Андижон шахар 2-туғрук комплекси",
 				manager: "Мудири Артикова С.Г. - (99) 316-71-00",
 				head_teacher: "Завуч Юнусова Зебо - (93) 427-42-22",
-				location_google: "https://maps.app.goo.glQ9H2+2RC",
-				location_yandex: ""
+				location_google: "https://maps.app.goo.gl/9L9aHh6mKd6YRDxA6",
+				location_yandex: "https://yandex.uz/maps/-/CHrUvGYE"
 			},
-
+		],
+	},
+	{
+		id: 42,
+		name: "Урология",
+		images: [
+			"/2-bino.jpg",
+			"/kafedralar/sanchas.jpg",
+			"/kafedralar/sehat.jpg",
+			"/kafedralar/agrofarm.jpg",
+		],
+		locations: [
+			{
+				id: 1,
+				type: "state",
+				name: "Б.Шох кўчаси 8-уй, АДТИ клиникаси худуди",
+				manager: "Мудири Артикова С.Г. - (99) 316-71-00",
+				head_teacher: "Завуч Юнусова Зебо - (93) 427-42-22",
+				location_google: "https://maps.app.goo.gl/mtTrdDEHd1BcqPc19",
+				location_yandex: "https://yandex.uz/maps/-/CHVnjPyw"
+			},
+			{
+				id: 2,
+				type: "state",
+				name: "Ахмад дониш 6. Андижон вилояти кўп тармоқли тиббиёт маркази.",
+				manager: "Мудири Артикова С.Г. - (99) 316-71-00",
+				head_teacher: "Завуч Юнусова Зебо - (93) 427-42-22",
+				location_google: "https://maps.app.goo.gl/VmUYPURQQuq6rYzS9",
+				location_yandex: "https://yandex.uz/maps/-/CHVJE4N0"
+			},
+			{
+				id: 3,
+				type: "private",
+				name: "Ахмад дониш 4. “Сехат” хусусий клиникаси",
+				manager: "Мудири Артикова С.Г. - (99) 316-71-00",
+				head_teacher: "Завуч Юнусова Зебо - (93) 427-42-22",
+				location_google: "https://maps.app.goo.gl/QDMaJVx8Nk5tGKMcA",
+				location_yandex: "https://yandex.uz/maps/-/CHVJA28b"
+			},
+			{
+				id: 4,
+				type: "private",
+				name: "Б.Рахимов кўчаси 4-уй. “Агрофарм” хусусий шифохонаси",
+				manager: "Мудири Артикова С.Г. - (99) 316-71-00",
+				head_teacher: "Завуч Юнусова Зебо - (93) 427-42-22",
+				location_google: "https://maps.app.goo.gl/LsTscUAg6g1otNPy7",
+				location_yandex: "https://yandex.uz/maps/-/CHrUzGit"
+			},
+		],
+	},
+	{
+		id: 43,
+		name: "Факультет терапия",
+		images: [
+			"/2-bino.jpg",
+			"/kafedralar/qizil-sharq.jpg",
+			"/kafedralar/narkologiya-dispanser.jpg",
+			"/kafedralar/xolis.jpg",
+		],
+		locations: [
+			{
+				id: 1,
+				type: "state",
+				name: "Б.Шох кўчаси 8-уй, АДТИ клиникаси худуди",
+				manager: "Мудири Артикова С.Г. - (99) 316-71-00",
+				head_teacher: "Завуч Юнусова Зебо - (93) 427-42-22",
+				location_google: "https://maps.app.goo.gl/mtTrdDEHd1BcqPc19",
+				location_yandex: "https://yandex.uz/maps/-/CHVnjPyw"
+			},
+			{
+				id: 2,
+				type: "private",
+				name: "Андижон шахар Бобур шох куча 102-уй Холис хусусий клиникаси",
+				manager: "Мудири Артикова С.Г. - (99) 316-71-00",
+				head_teacher: "Завуч Юнусова Зебо - (93) 427-42-22",
+				location_google: "https://maps.app.goo.gl/9RizLXKKHw996hM88",
+				location_yandex: "https://yandex.uz/maps/-/CHrYm-9Z"
+			},
+			{
+				id: 3,
+				type: "state",
+				name: "Андижон шахар Кизил шарк куча 3 РИИАКМ Анжижон филиали",
+				manager: "Мудири Артикова С.Г. - (99) 316-71-00",
+				head_teacher: "Завуч Юнусова Зебо - (93) 427-42-22",
+				location_google: "https://maps.app.goo.gl/Ne82JF7ozhvmnFUYA",
+				location_yandex: "https://yandex.uz/maps/-/CHrYeVzg"
+			},
+			{
+				id: 4,
+				type: "state",
+				name: "Андижон тумани Амир Темур шох куча 4 Андижон вилояти Наркология диспансери",
+				manager: "Мудири Артикова С.Г. - (99) 316-71-00",
+				head_teacher: "Завуч Юнусова Зебо - (93) 427-42-22",
+				location_google: "https://maps.app.goo.gl/ibgtYY6Rs3NyM2Py6",
+				location_yandex: "https://yandex.uz/maps/-/CHrYiKjP"
+			},
+		],
+	},
+	{
+		id: 44,
+		name: "Ички касалликлар",
+		images: [
+			"/kafedralar/sanchas.jpg",
+			"/kafedralar/ashtb.jpg",
+			"/kafedralar/tybsh.jpg",
+			"/kafedralar/sehat.jpg",
+		],
+		locations: [
+			{
+				id: 1,
+				type: "state",
+				name: "Андижон шахар Огахий 3 уй, АВКТТМ",
+				manager: "Мудири Артикова С.Г. - (99) 316-71-00",
+				head_teacher: "Завуч Юнусова Зебо - (93) 427-42-22",
+				location_google: "https://maps.app.goo.gl/Rf4DfMGwGEvLzjmZ7",
+				location_yandex: "https://yandex.uz/maps/-/CHrYuMZf"
+			},
+			{
+				id: 2,
+				type: "private",
+				name: "Андижон шахар Ахмад Дониш 4-уй",
+				manager: "Мудири Артикова С.Г. - (99) 316-71-00",
+				head_teacher: "Завуч Юнусова Зебо - (93) 427-42-22",
+				location_google: "https://maps.app.goo.gl/QDMaJVx8Nk5tGKMcA",
+				location_yandex: "https://yandex.uz/maps/-/CHVJA28b"
+			},
+			{
+				id: 3,
+				type: "state",
+				name: "Андижон шахар Ю.Отабеков кўчаси, 1-уй",
+				manager: "Мудири Артикова С.Г. - (99) 316-71-00",
+				head_teacher: "Завуч Юнусова Зебо - (93) 427-42-22",
+				location_google: "https://maps.app.goo.gl/xNyzzGZpX3zahG7KA",
+				location_yandex: "https://yandex.uz/maps/-/CHrEq-93"
+			},
+			{
+				id: 4,
+				type: "state",
+				name: "Андижон шахар Ниҳол кўчаси 48-уй",
+				manager: "Мудири Артикова С.Г. - (99) 316-71-00",
+				head_teacher: "Завуч Юнусова Зебо - (93) 427-42-22",
+				location_google: "https://maps.app.goo.gl/eKDGwDWG3Pj7M3zC8",
+				location_yandex: "https://yandex.uz/maps/-/CHrEVTLT"
+			},
 		],
 	},
 ]
