@@ -52,7 +52,7 @@ onMounted(() => {
 			ref="cardElement"
 		>
 			<div class="relative h-32 sm:h-40 md:h-48">
-				<img
+				<NuxtImg
 					:src="building.images[0]"
 					:alt="building.name"
 					class="w-full h-full object-cover"

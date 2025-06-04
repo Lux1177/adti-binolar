@@ -100,7 +100,7 @@ watch(() => props.images, resetAutoplay, { deep: true })
 				:style="{ transform: `translateX(-${currentIndex * 100}%)` }"
 			>
 				<div v-for="(image, index) in images" :key="index" class="min-w-full h-full flex-shrink-0">
-					<img
+					<NuxtImg
 						:src="image"
 						:alt="`Slide ${index + 1}`"
 						class="w-full h-full object-cover"
