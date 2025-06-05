@@ -82,7 +82,7 @@ const privateLocationsGridClass = computed(() => getGridClass(privateLocations.v
 					<div v-if="stateLocations.length" class="location-section">
 						<div class="flex items-center mb-6">
 							<div class="w-1.5 h-8 bg-[#64ffda] rounded-full mr-3"></div>
-							<h2 class="text-2xl font-bold text-white">Давлат тиббиёт муассасалари</h2>
+							<h2 class="text-2xl font-bold text-white">Давлат тиббиёт муассасаларида</h2>
 						</div>
 
 						<!-- Dynamic grid based on number of items -->
@@ -148,7 +148,7 @@ const privateLocationsGridClass = computed(() => getGridClass(privateLocations.v
 					<div v-if="privateLocations.length" class="location-section">
 						<div class="flex items-center mb-6">
 							<div class="w-1.5 h-8 bg-[#64ffda] rounded-full mr-3"></div>
-							<h2 class="text-2xl font-bold text-white">Хусусий тиббиёт муассасалар</h2>
+							<h2 class="text-2xl font-bold text-white">Хусусий тиббиёт муассасаларида</h2>
 						</div>
 
 						<!-- Dynamic grid based on number of items -->
