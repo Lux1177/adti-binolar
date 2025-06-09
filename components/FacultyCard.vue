@@ -53,9 +53,11 @@ onMounted(() => {
 		>
 			<div class="relative h-32 sm:h-40 md:h-48">
 				<NuxtImg
+					quality="50"
 					:src="building.images[0]"
 					:alt="building.name"
 					class="w-full h-full object-cover"
+					preload
 				/>
 				<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
 			</div>

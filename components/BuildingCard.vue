@@ -36,6 +36,8 @@ const navigateToBuilding = () => {
 					:src="building.images[0]"
 					:alt="building.name"
 					class="w-full h-full object-cover"
+					quality="50"
+					preload
 				/>
 				<div class="absolute inset-0 bg-gradient-to-t from-black/60
 				to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
