@@ -90,8 +90,11 @@ export const faculties: Building[] = [
 		name: "Жаррохлик касалликлари ва фуқаролар мухофазаси кафедраси",
 		images: [
 			"/kafedralar/sanchas.jpg",
+			"/kafedralar/onkologiya.jpg",
+			"/kafedralar/6-op.jpg",
+			"/3-bino/1.jpg",
 			"/kafedralar/musaffo-limfa.jpg",
-			"/kafedralar/musaffo-limfa.jpg"
+			"/kafedralar/agif.jpg",
 		],
 		locations: [
 			{
@@ -127,8 +130,8 @@ export const faculties: Building[] = [
 				name: "Агиф клиникаси",
 				manager: "Мудири Эгамов Й.С. - (90) 253-92-29",
 				head_teacher: "Завуч Азизов Дилшодбек - (90) 166-88-44",
-				location_google: "https://maps.app.goo.gl/brxTmmDw1KVLZ5zk6",
-				location_yandex: "https://yandex.uz/maps/-/CHVFv2px"
+				location_google: "https://maps.app.goo.gl/kZFyWZFGg4LpnYUZ9",
+				location_yandex: "https://yandex.uz/maps/-/CHSBJ-1o"
 			},
 			{
 				id: 5,
@@ -142,11 +145,11 @@ export const faculties: Building[] = [
 			{
 				id: 6,
 				type: "state",
-				name: "АДТИ 3-ўқув биноси",
+				name: "АДТИ 2-ўқув биноси",
 				manager: "Мудири Эгамов Й.С. - (90) 253-92-29",
 				head_teacher: "Завуч Азизов Дилшодбек - (90) 166-88-44",
-				location_google: "https://maps.app.goo.gl/brxTmmDw1KVLZ5zk6",
-				location_yandex: "https://yandex.uz/maps/-/CHVFv2px"
+				location_google: 'https://maps.app.goo.gl/uwrHWzVNEB4JDi5w8',
+				location_yandex: 'https://yandex.uz/maps/-/CHSBN2n2'
 			}
 		]
 	},
@@ -155,8 +158,6 @@ export const faculties: Building[] = [
 		name: "Факультет педиатрия ва неонатология кафедраси",
 		images: [
 			"/kafedralar/bolalar-shifoxonasi.jpg",
-			"/kafedralar/bolalar-shifoxonasi.jpg",
-			"/kafedralar/bolalar-shifoxonasi.jpg"
 		],
 		locations: [
 			{
@@ -221,8 +222,6 @@ export const faculties: Building[] = [
 		name: "Дерматовенерология кафедраси",
 		images: [
 			"/kafedralar/derma.jpg",
-			"/kafedralar/derma.jpg",
-			"/kafedralar/derma.jpg"
 		],
 		locations: [
 			{
@@ -240,9 +239,7 @@ export const faculties: Building[] = [
 		id: 9,
 		name: "Ижтимоий гигиена ва ССБ кафедраси",
 		images: [
-			"/1-bino.jpg",
-			"/1-bino.jpg",
-			"/1-bino.jpg"
+			"/3-bino.jpg",
 		],
 		locations: [
 			{
@@ -251,8 +248,8 @@ export const faculties: Building[] = [
 				name: "АДТИ 2-ўқув биноси",
 				manager: "Мудири Бабич С.М. - (90) 622-39-95",
 				head_teacher: "Завуч Темирова Д. - (97) 797-00-44",
-				location_google: "https://maps.app.goo.gl/QiJNzAi17qLrf2DX7",
-				location_yandex: "https://yandex.uz/maps/-/CHVFV45v"
+				location_google: "https://maps.app.goo.gl/QFsRCXM95uQxTApv9",
+				location_yandex: "https://yandex.uz/maps/-/CHSBN2n2"
 			}
 		]
 	},
@@ -261,8 +258,6 @@ export const faculties: Building[] = [
 		name: "Болалар жаррохлиги кафедраси",
 		images: [
 			"/Furqat.jpg",
-			"/Furqat.jpg",
-			"/Furqat.jpg"
 		],
 		locations: [
 			{
@@ -281,8 +276,7 @@ export const faculties: Building[] = [
 		name: "1-Акушерлик ва гинекология кафедраси",
 		images: [
 			"/Perenatal_markaz.jpg",
-			"/Perenatal_markaz.jpg",
-			"/Perenatal_markaz.jpg"
+			"/kafedralar/family-med.jpg",
 		],
 		locations: [
 			{
@@ -300,8 +294,8 @@ export const faculties: Building[] = [
 				name: "Family med клиникаси",
 				manager: "Мудири Асранкулова Д.Б. - (91) 167-23-30",
 				head_teacher: "Завуч Абдуллаева М. - (91) 493-25-88",
-				location_google: "https://maps.app.goo.gl/1DgTUe2Bv9JRotiP6",
-				location_yandex: "https://yandex.uz/maps/-/CHVJAC9C"
+				location_google: "https://maps.app.goo.gl/getRgx81TcQxiwZT9",
+				location_yandex: "https://yandex.uz/maps/-/CHSBrH9Q"
 			}
 		]
 	},
@@ -309,9 +303,10 @@ export const faculties: Building[] = [
 		id: 12,
 		name: "Болалар травматологияси, ортопедияси ва нейрожаррохлик кафедраси",
 		images: [
+			"/Furqat.jpg",
+			"/Furqat.jpg",
 			"/kafedralar/sehat.jpg",
-			"/kafedralar/sehat.jpg",
-			"/kafedralar/sehat.jpg"
+			"/kafedralar/ibn-sino.jpg"
 		],
 		locations: [
 			{
@@ -320,17 +315,17 @@ export const faculties: Building[] = [
 				name: "Телмон вилоят травматалогия шифохонаси",
 				manager: "Мудири Кулдашев К.А. - (97) 995-00-01",
 				head_teacher: "Завуч Расулов Жахонгир - (93) 855-77-88",
-				location_google: "https://maps.app.goo.gl/QDMaJVx8Nk5tGKMcA",
-				location_yandex: "https://yandex.uz/maps/-/CHVJA28b"
+				location_google: "",
+				location_yandex: ""
 			},
 			{
 				id: 2,
 				type: "state",
-				name: "РШТТЁАФ (облосной)",
+				name: "РШТТЁАФ (обласной)",
 				manager: "Мудири Кулдашев К.А. - (97) 995-00-01",
 				head_teacher: "Завуч Расулов Жахонгир - (93) 855-77-88",
-				location_google: "https://maps.app.goo.gl/QDMaJVx8Nk5tGKMcA",
-				location_yandex: "https://yandex.uz/maps/-/CHVJA28b"
+				location_google: "https://maps.app.goo.gl/61W4gALU9sGcxbpy6",
+				location_yandex: "https://yandex.uz/maps/-/CHSnRWNb"
 			},
 			{
 				id: 3,
@@ -347,8 +342,8 @@ export const faculties: Building[] = [
 				name: "Ибн сино клиникаси",
 				manager: "Мудири Кулдашев К.А. - (97) 995-00-01",
 				head_teacher: "Завуч Расулов Жахонгир - (93) 855-77-88",
-				location_google: "https://maps.app.goo.gl/QDMaJVx8Nk5tGKMcA",
-				location_yandex: "https://yandex.uz/maps/-/CHVJA28b"
+				location_google: "",
+				location_yandex: ""
 			}
 		]
 	},
@@ -357,8 +352,7 @@ export const faculties: Building[] = [
 		name: "Педиатрия факультети учун ички касалликлари пропедевтикаси",
 		images: [
 			"/kafedralar/sanchas.jpg",
-			"/kafedralar/sanchas.jpg",
-			"/kafedralar/sanchas.jpg"
+			"/kafedralar/kardiologiya.jpg",
 		],
 		locations: [
 			{
@@ -376,8 +370,8 @@ export const faculties: Building[] = [
 				name: "Вилоят кардиология маркази",
 				manager: "Мудири Артикова С.Г. - (99) 316-71-00",
 				head_teacher: "Завуч Юнусова Зебо - (93) 427-42-22",
-				location_google: "https://maps.app.goo.gl/VmUYPURQQuq6rYzS9",
-				location_yandex: "https://yandex.uz/maps/-/CHVJE4N0"
+				location_google: "",
+				location_yandex: ""
 			}
 		]
 	},
@@ -385,15 +379,13 @@ export const faculties: Building[] = [
 		id: 14,
 		name: "Превентив тиббиёт асослари кафедраси",
 		images: [
-			"/1-bino.jpg",
-			"/1-bino.jpg",
-			"/1-bino.jpg"
+			"/3-bino.jpg",
 		],
 		locations: [
 			{
 				id: 1,
 				type: "state",
-				name: "АДТИ 2-ўқув биноси",
+				name: "АДТИ 3-ўқув биноси",
 				manager: "Мудири Салиева М.Х. - (91) 612-65-02",
 				head_teacher: "Завуч Хожиахматова Р. - (93) 215-91-61",
 				location_google: "https://maps.app.goo.gl/QiJNzAi17qLrf2DX7",
@@ -405,8 +397,8 @@ export const faculties: Building[] = [
 		id: 15,
 		name: "Госпитал терапия ва эндокринология кафедраси",
 		images: [
-				"https://adti.uz/wp-content/uploads/2024/08/1V9A4383.jpg",
-				"https://adti.uz/wp-content/uploads/2024/08/1V9A4383.jpg",
+				"/2-bino.jpg",
+				"/adti-klinikasi/2.jpg",
 		],
 		locations: [
 			{
@@ -434,8 +426,6 @@ export const faculties: Building[] = [
 		name: "Фтизиатрия ва пулманология, микробиология ,иммунология ва вирусология кафедраси",
 		images: [
 				"/3-bino.jpg",
-				"/3-bino.jpg",
-				"/3-bino.jpg",
 		],
 		locations: [
 			{
@@ -453,8 +443,6 @@ export const faculties: Building[] = [
 		id: 17,
 		name: "1-Фармацевтик фанлар кафедраси",
 		images: [
-				"/3-bino.jpg",
-				"/3-bino.jpg",
 				"/3-bino.jpg",
 		],
 		locations: [
@@ -475,8 +463,6 @@ export const faculties: Building[] = [
 		name: "2-Фармацевтик фанлар кафедраси",
 		images: [
 			"/3-bino.jpg",
-			"/3-bino.jpg",
-			"/3-bino.jpg",
 		],
 		locations: [
 			{
@@ -494,8 +480,6 @@ export const faculties: Building[] = [
 		id: 19,
 		name: "Биологик физика, информатика, тиббий технологиялар кафедраси",
 		images: [
-				"/adti.jpg",
-				"/adti.jpg",
 				"/adti.jpg",
 			],
 		locations: [
@@ -515,8 +499,6 @@ export const faculties: Building[] = [
 		name: "Ижтимоий - гуманитар фанлар кафедраси",
 		images: [
 				"/3-bino.jpg",
-				"/3-bino.jpg",
-				"/3-bino.jpg",
 		],
 		locations: [
 			{
@@ -534,8 +516,6 @@ export const faculties: Building[] = [
 		id: 21,
 		name: "Биологик кимё кафедраси",
 		images: [
-			"/3-bino.jpg",
-			"/3-bino.jpg",
 			"/3-bino.jpg",
 		],
 		locations: [
@@ -555,8 +535,6 @@ export const faculties: Building[] = [
 		name: "Тиббий кимё кафедраси",
 		images: [
 			"/3-bino.jpg",
-			"/3-bino.jpg",
-			"/3-bino.jpg",
 		],
 		locations: [
 			{
@@ -574,8 +552,6 @@ export const faculties: Building[] = [
 		id: 23,
 		name: "Тиббий биология ва гистология кафедраси",
 		images: [
-			"/3-bino.jpg",
-			"/3-bino.jpg",
 			"/3-bino.jpg",
 		],
 		locations: [
@@ -595,8 +571,6 @@ export const faculties: Building[] = [
 		name: "Фармакология, клиник фармакология ва тиббиёт биотехнологияси",
 		images: [
 			"/adti.jpg",
-			"/adti.jpg",
-			"/adti.jpg",
 		],
 		locations: [
 			{
@@ -614,8 +588,6 @@ export const faculties: Building[] = [
 		id: 25,
 		name: "2-Факультет ва госпитал жаррохлик кафедраси",
 		images: [
-			"/adti.jpg",
-			"/adti.jpg",
 			"/adti.jpg",
 		],
 		locations: [
@@ -635,6 +607,7 @@ export const faculties: Building[] = [
 		name: "Неврология кафедраси",
 		images: [
 				"/2-bino.jpg",
+				"/adti-klinikasi/2.jpg",
 		],
 		locations: [
 			{
@@ -647,7 +620,7 @@ export const faculties: Building[] = [
 				location_yandex: "https://yandex.uz/maps/-/CHVnjPyw"
 			},
 			{
-				id: 1,
+				id: 2,
 				type: "state",
 				name: "АДТИ клиникаси худуди",
 				manager: "Мудири Артикова С.Г. - (99) 316-71-00",
@@ -680,8 +653,6 @@ export const faculties: Building[] = [
 		name: "Тиббий профилактика кафедраси",
 		images: [
 			"/3-bino.jpg",
-			"/3-bino.jpg",
-			"/3-bino.jpg",
 		],
 		locations: [
 			{
@@ -699,8 +670,6 @@ export const faculties: Building[] = [
 		id: 29,
 		name: "Ўзбек тили ва адабиёти, тиллар кафедраси",
 		images: [
-			"/3-bino.jpg",
-			"/3-bino.jpg",
 			"/3-bino.jpg",
 		],
 		locations: [
