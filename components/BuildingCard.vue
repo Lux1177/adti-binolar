@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { BuildingInfo} from '~/types/building';
+import type { BuildingInfo } from '~/types/building';
 import { useRouter } from 'vue-router';
 
 interface BuildingProps {
@@ -8,12 +8,11 @@ interface BuildingProps {
 
 const props = defineProps<BuildingProps>();
 const router = useRouter();
-const cardElement = ref(null);
 
 const navigateToBuilding = () => {
-	if (cardElement.value) {
-		const card = cardElement.value as HTMLElement;
-		card.style.transform = 'scale(1.1)';
+	const card = document.getElementById(`card-${props.building.id}`);
+	if (card) {
+		card.style.transform = 'scale(1.05)';
 		card.style.opacity = '0';
 	}
 	setTimeout(() => {
@@ -23,46 +22,35 @@ const navigateToBuilding = () => {
 </script>
 
 <template>
-	<div class="building-card w-full">
+	<div class="building-card w-full animate-fade-in">
 		<div
 			@click="navigateToBuilding"
-			class="cursor-pointer bg-[#091a2a] rounded-xl shadow-lg
-			overflow-hidden transform transition-all duration-300 hover:scale-105
-			hover:border-[#52e0c4] border border-[#1b2b3a]"
-			ref="cardElement"
+			:id="`card-${building.id}`"
+			class="group cursor-pointer bg-[#091a2a] rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:scale-[1.03] hover:border-[#52e0c4] border border-[#1b2b3a]"
 		>
-			<div class="relative h-32 sm:h-40 md:h-48">
-				<NuxtImg
-					:src="building.images[0]"
-					:alt="building.name"
-					class="w-full h-full object-cover"
-					quality="50"
-					preload
-				/>
-				<div class="absolute inset-0 bg-gradient-to-t from-black/60
-				to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
-			</div>
+			<!-- Auto-optimized image with blur placeholder -->
+			<NuxtImg
+				:src="building.images[0]"
+				:alt="building.name"
+				placeholder="blur"
+				loading="lazy"
+				class="h-36 sm:h-44 md:h-52 w-full object-cover transition duration-500 ease-in-out brightness-105 contrast-110"
+			/>
+
+			<!-- Text block -->
 			<div class="p-3 sm:p-4 md:p-6">
-				<h2 class="text-base sm:text-lg md:text-xl font-semibold
-				text-[#ccd6f6] mb-2 line-clamp-2 bg-gradient-to-r
-				from-[#52e0c4] to-[#728098] bg-clip-text text-transparent">
+				<h2 class="text-base sm:text-lg md:text-xl font-semibold text-[#ccd6f6] mb-2 line-clamp-2 bg-gradient-to-r from-[#52e0c4] to-[#728098] bg-clip-text text-transparent">
 					{{ building.name }}
 				</h2>
-				<div class="flex items-start text-[#a8b2d1] gap-1">
-					<span class="text-sm sm:text-base line-clamp-2">{{ building.description }}</span>
-				</div>
+				<p class="text-sm sm:text-base text-[#a8b2d1] line-clamp-2">
+					{{ building.description }}
+				</p>
 			</div>
 		</div>
 	</div>
 </template>
 
-
-
 <style scoped>
-.building-card {
-	perspective: 1000px;
-}
-
 @keyframes fadeIn {
 	from {
 		opacity: 0;
@@ -73,8 +61,7 @@ const navigateToBuilding = () => {
 		transform: translateY(0);
 	}
 }
-
-.building-card {
-	animation: fadeIn 0.5s ease-out forwards;
+.animate-fade-in {
+	animation: fadeIn 0.4s ease-out forwards;
 }
 </style>
