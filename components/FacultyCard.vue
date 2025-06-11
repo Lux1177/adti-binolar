@@ -13,7 +13,8 @@ const isFav = ref(false);
 const isImgLoaded = ref(false);
 const cardRef = ref<HTMLElement | null>(null);
 
-const toggleFavorite = () => {
+const toggleFavorite = (event: Event) => {
+	event.stopPropagation();
 	updateFavorites(props.building);
 	isFav.value = isFavorite(props.building.id);
 };
@@ -30,26 +31,31 @@ onMounted(() => {
 
 <template>
 	<div class="relative animate-fade-in">
-		<!-- Favorite button -->
-		<button
-			@click.stop="toggleFavorite"
-			class="absolute right-2 top-2 z-10 bg-black/30 p-1 rounded-lg hover:scale-110 transition"
-		>
-			<Icon :name="isFav ? 'mdi:heart' : 'mdi:heart-outline'" class="text-red-500 w-7 h-7" />
-		</button>
-
-		<!-- Location badge -->
-		<div class="absolute left-2 top-2 z-10 bg-black/70 text-white border border-[#52e0c4]/50 backdrop-blur-sm px-3 py-1 rounded-lg flex items-center gap-2 shadow-glow">
-			<Icon name="mdi:map-marker-multiple" class="text-[#52e0c4] w-5 h-5" />
-			<span class="font-bold">{{ building.locations.length }}</span>
-		</div>
-
 		<!-- Card -->
 		<div
 			@click="navigate"
 			ref="cardRef"
-			class="group cursor-pointer overflow-hidden rounded-xl border border-[#1b2b3a] bg-[#091a2a] transition-all duration-300 hover:scale-[1.03] hover:border-[#52e0c4] hover:shadow-lg hover:shadow-[#52e0c455]"
+			class="group cursor-pointer overflow-hidden rounded-xl border border-[#1b2b3a] bg-[#091a2a] transition-all duration-300 hover:scale-[1.03] hover:border-[#52e0c4] hover:shadow-lg hover:shadow-[#52e0c455] relative"
 		>
+			<!-- Favorite button - positioned inside card to scale with it -->
+			<button
+				@click="toggleFavorite"
+				class="absolute right-3 top-3 z-30 bg-black/50 backdrop-blur-sm w-10 h-10 rounded-full hover:bg-black/70 active:scale-95 transition-all duration-200 hover:scale-110 group-hover:scale-110 border border-white/10 hover:border-red-500/30 flex items-center justify-center cursor-pointer"
+				:class="{ 'bg-red-500/20 border-red-500/50': isFav }"
+			>
+				<Icon
+					:name="isFav ? 'mdi:heart' : 'mdi:heart-outline'"
+					class="w-5 h-5 transition-colors duration-200"
+					:class="isFav ? 'text-red-500' : 'text-white hover:text-red-400'"
+				/>
+			</button>
+
+			<!-- Location badge -->
+			<div class="absolute left-3 top-3 z-20 bg-black/50 backdrop-blur-sm text-white border border-[#52e0c4]/50 px-3 py-1.5 rounded-full flex items-center gap-2 shadow-glow hover:bg-black/70 transition-all duration-200">
+				<Icon name="mdi:map-marker-multiple" class="text-[#52e0c4] w-4 h-4" />
+				<span class="font-bold text-sm">{{ building.locations.length }}</span>
+			</div>
+
 			<!-- Image -->
 			<div class="relative h-40 sm:h-48 md:h-56">
 				<!-- Skeleton -->
@@ -76,9 +82,8 @@ onMounted(() => {
 				/>
 
 				<!-- Overlay -->
-				<div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent z-20" />
+				<div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent z-15" />
 			</div>
-
 
 			<!-- Info -->
 			<div class="p-4 space-y-2">
@@ -88,7 +93,7 @@ onMounted(() => {
 				<Skeleton v-else width="80%" height="1.2rem" />
 
 				<div class="flex items-start gap-2 text-[#a8b2d1]">
-					<Icon name="mdi:map-marker" class="w-5 h-5 mt-1 text-[#52e0c4]" />
+					<Icon name="mdi:map-marker" class="w-5 h-5 mt-1 text-[#52e0c4] flex-shrink-0" />
 					<span v-if="isImgLoaded" class="text-sm md:text-base line-clamp-2">
 						{{ building.locations.map(l => l.name).join(', ') }}
 					</span>
@@ -121,11 +126,20 @@ onMounted(() => {
 .animate-fade-in {
 	animation: fade-in 0.3s ease-out;
 }
+
 .animate-disappear {
 	animation: disappear 0.2s ease-in forwards;
 }
 
 .shadow-glow {
 	box-shadow: 0 0 10px rgba(82, 224, 196, 0.3);
+}
+
+/* Ensure proper line clamping */
+.line-clamp-2 {
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
 }
 </style>
