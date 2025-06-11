@@ -10,13 +10,4 @@ export default defineNuxtConfig({
   },
   devtools: { enabled: true },
   css: ['~/assets/css/main.css'],
-  image: {
-    provider: 'ipx',
-    screens: {
-      sm: 320,
-      md: 640,
-      lg: 1024,
-      xl: 1280
-    }
-  }
 })
