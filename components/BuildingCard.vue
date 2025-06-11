@@ -1,13 +1,17 @@
 <script setup lang="ts">
 import type { BuildingInfo } from '~/types/building';
+import { ref } from 'vue';
 import { useRouter } from 'vue-router';
+import Skeleton from '~/components/ui/Skeleton.vue';
 
 interface BuildingProps {
-	building: BuildingInfo
+	building: BuildingInfo;
 }
 
 const props = defineProps<BuildingProps>();
 const router = useRouter();
+
+const isImgLoaded = ref(false);
 
 const navigateToBuilding = () => {
 	const card = document.getElementById(`card-${props.building.id}`);
@@ -28,16 +32,35 @@ const navigateToBuilding = () => {
 			:id="`card-${building.id}`"
 			class="group cursor-pointer bg-[#091a2a] rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:scale-[1.03] hover:border-[#52e0c4] border border-[#1b2b3a]"
 		>
-			<!-- Auto-optimized image with blur placeholder -->
-			<NuxtImg
-				:src="building.images[0]"
-				:alt="building.name"
-				placeholder="blur"
-				loading="lazy"
-				class="h-36 sm:h-44 md:h-52 w-full object-cover transition duration-500 ease-in-out brightness-105 contrast-110"
-			/>
+			<!-- Используем переиспользуемый Skeleton-компонент -->
+			<div class="relative h-40 sm:h-48 md:h-56">
+				<!-- Skeleton -->
+				<Skeleton v-if="!isImgLoaded" className="absolute inset-0 z-0" />
 
-			<!-- Text block -->
+				<!-- Blur-up image -->
+				<NuxtImg
+					:src="building.images[0]"
+					:alt="building.name"
+					loading="lazy"
+					@load="isImgLoaded = true"
+					class="absolute inset-0 h-full w-full object-cover z-0 blur-xl scale-105 transition-opacity duration-300"
+					:class="{ 'opacity-100': !isImgLoaded, 'opacity-0': isImgLoaded }"
+				/>
+
+				<!-- Full quality image -->
+				<NuxtImg
+					:src="building.images[0]"
+					:alt="building.name"
+					loading="lazy"
+					@load="isImgLoaded = true"
+					class="h-full w-full object-cover z-10 transition-opacity duration-500 ease-out brightness-110 contrast-110 group-hover:brightness-105"
+					:class="{ 'opacity-0': !isImgLoaded, 'opacity-100': isImgLoaded }"
+				/>
+
+				<!-- Overlay -->
+				<div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent z-20" />
+			</div>
+
 			<div class="p-3 sm:p-4 md:p-6">
 				<h2 class="text-base sm:text-lg md:text-xl font-semibold text-[#ccd6f6] mb-2 line-clamp-2 bg-gradient-to-r from-[#52e0c4] to-[#728098] bg-clip-text text-transparent">
 					{{ building.name }}
@@ -61,6 +84,7 @@ const navigateToBuilding = () => {
 		transform: translateY(0);
 	}
 }
+
 .animate-fade-in {
 	animation: fadeIn 0.4s ease-out forwards;
 }
