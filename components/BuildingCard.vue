@@ -39,6 +39,7 @@ const navigateToBuilding = () => {
 
 				<!-- Blur-up image -->
 				<NuxtImg
+					quality="10"
 					:src="building.images[0]"
 					:alt="building.name"
 					loading="lazy"
@@ -49,6 +50,7 @@ const navigateToBuilding = () => {
 
 				<!-- Full quality image -->
 				<NuxtImg
+					quality="30"
 					:src="building.images[0]"
 					:alt="building.name"
 					loading="lazy"
