@@ -50,7 +50,7 @@ const navigateToBuilding = () => {
 
 				<!-- Full quality image -->
 				<NuxtImg
-					quality="30"
+					quality="50"
 					:src="building.images[0]"
 					:alt="building.name"
 					loading="lazy"
