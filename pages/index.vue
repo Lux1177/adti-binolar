@@ -1,5 +1,34 @@
 <script setup lang="ts">
 import {buildings} from '@/data/buildingsData'
+
+useHead({
+	title: `АДТИ — Бинолар`,
+	meta: [
+		{
+			name: 'description',
+			content: "Андижон Давлат Тиббиёт Институти - Бинолар маълумоти ва жойлашуви"
+		},
+		{
+			property: 'og:title',
+			content: "АДТИ — Бинолар"
+		},
+		{
+			property: 'og:description',
+			content: "Андижон Давлат Тиббиёт Институти - Бинолар маълумоти ва жойлашуви"
+		},
+		{
+			property: 'og:image',
+			content: '/1-bino.jpg'
+		}
+	],
+	link: [
+		{
+			rel: 'canonical',
+			href: "https://adti-binolar.vercel.app/"
+		}
+	]
+})
+
 </script>
 
 <template>

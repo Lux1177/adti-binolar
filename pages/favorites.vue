@@ -1,5 +1,34 @@
 <script setup lang="ts">
 const favorites = getFavorites()
+
+useHead({
+	title: `АДТИ — Танланган бинолар`,
+	meta: [
+		{
+			name: 'description',
+			content: "Андижон Давлат Тиббиёт Институти - Танланган бинолар маълумоти ва жойлашуви"
+		},
+		{
+			property: 'og:title',
+			content: "АДТИ — Танланган бинолар"
+		},
+		{
+			property: 'og:description',
+			content: "Андижон Давлат Тиббиёт Институти - Танланган бинолар маълумоти ва жойлашуви"
+		},
+		{
+			property: 'og:image',
+			content: '/1-bino.jpg'
+		}
+	],
+	link: [
+		{
+			rel: 'canonical',
+			href: "https://adti-binolar.vercel.app/favorites/"
+		}
+	]
+})
+
 </script>
 
 <template>

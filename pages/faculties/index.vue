@@ -1,5 +1,34 @@
 <script setup lang="ts">
 import {faculties} from "~/data/facultiesData";
+
+useHead({
+	title: `АДТИ — Кафедралар`,
+	meta: [
+		{
+			name: 'description',
+			content: "Андижон Давлат Тиббиёт Институти - Кафедралар маълумоти ва жойлашуви"
+		},
+		{
+			property: 'og:title',
+			content: "АДТИ — Кафедралар"
+		},
+		{
+			property: 'og:description',
+			content: "Андижон Давлат Тиббиёт Институти - Кафедралар маълумоти ва жойлашуви"
+		},
+		{
+			property: 'og:image',
+			content: '/1-bino.jpg'
+		}
+	],
+	link: [
+		{
+			rel: 'canonical',
+			href: "https://adti-binolar.vercel.app/faculties/"
+		}
+	]
+})
+
 </script>
 
 <template>

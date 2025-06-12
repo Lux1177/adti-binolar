@@ -7,6 +7,34 @@ const route = useRoute();
 const id: number = parseInt(route.params.id as string);
 const building: BuildingInfo | undefined = getBuildingById(id);
 
+useHead({
+	title: `${building.name} — АДТИ`,
+	meta: [
+		{
+			name: 'description',
+			content: `Андижон Давлат Тиббиёт Институти - ${building.name} маълумоти ва жойлашуви` || 'АДТИ бино маълумоти'
+		},
+		{
+			property: 'og:title',
+			content: building.name
+		},
+		{
+			property: 'og:description',
+			content: `Андижон Давлат Тиббиёт Институти - ${building.name} маълумоти ва жойлашуви` || 'АДТИ бино маълумоти'
+		},
+		{
+			property: 'og:image',
+			content: building.images?.[0] || `/${id}-bino.jpg`
+		}
+	],
+	link: [
+		{
+			rel: 'canonical',
+			href: `https://adti-binolar.vercel.app/building/${id}`
+		}
+	]
+})
+
 </script>
 
 <template>

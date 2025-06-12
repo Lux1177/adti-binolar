@@ -17,6 +17,34 @@ const updateBuilding = () => {
 
 updateBuilding();
 
+useHead({
+	title: `${building.value.name} — АДТИ`,
+	meta: [
+		{
+			name: 'description',
+			content: `Андижон Давлат Тиббиёт Институти - ${building.value.name} маълумоти ва жойлашуви` || 'Андижон Давлат Тиббиёт Институти -кафедра маълумоти ва жойлашуви'
+		},
+		{
+			property: 'og:title',
+			content: building.value.name
+		},
+		{
+			property: 'og:description',
+			content: `Андижон Давлат Тиббиёт Институти - ${building.value.name} маълумоти ва жойлашуви` || ''
+		},
+		{
+			property: 'og:image',
+			content: building.value.images?.[0] || '/adti.jpg'
+		}
+	],
+	link: [
+		{
+			rel: 'canonical',
+			href: `https://adti-binolar.vercel.app/faculties/${buildingId}`
+		}
+	]
+})
+
 const privateLocations = computed(() =>
 	building.value?.locations.filter(loc => loc.type === 'private') || []
 );

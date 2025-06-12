@@ -2,7 +2,7 @@ export interface Building {
 	id: number;
 	name: string;
 	images: string[];
-	locations: Location[]
+	locations: Location[];
 }
 
 export interface BuildingInfo {
