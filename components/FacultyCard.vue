@@ -61,17 +61,6 @@ onMounted(() => {
 				<!-- Skeleton -->
 				<Skeleton v-if="!isImgLoaded" className="absolute inset-0 z-0" />
 
-				<!-- Blur-up image -->
-				<NuxtImg
-					quality="10"
-					:src="building.images[0]"
-					:alt="building.name"
-					loading="lazy"
-					@load="isImgLoaded = true"
-					class="absolute inset-0 h-full w-full object-cover z-0 blur-xl scale-105 transition-opacity duration-300"
-					:class="{ 'opacity-100': !isImgLoaded, 'opacity-0': isImgLoaded }"
-				/>
-
 				<!-- Full quality image -->
 				<NuxtImg
 					quality="50"
